@@ -1,0 +1,21 @@
+{
+  "name": "Erwin_Theme",
+  "description": "Use the Erwin colors",
+  "version": "0.0.0",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JGrndn/erwin_theme"
+  },
+  "author": "Jerome GRONDIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JGrndn/erwin_theme/issues"
+  },
+  "homepage": "",
+  "wiki": "https://github.com/JGrndn/erwin_theme/wiki",
+  "evolve-version": "4.2 - 4.2"
+}

@@ -1,0 +1,34 @@
+@import "../../_variables";
+@import "../../_mixins";
+
+div.cwPropertiesTableHeader{
+  font-weight: bold;
+  border-bottom: 1px solid @cwColor1;
+}
+
+ul.property-details .property-title{
+  font-weight: bold;
+  font-size: @cwFontTitleSize;
+  border-bottom: 1px solid @cwColor1;
+  .cw-property-details-right{
+    .btn:hover{
+      .fa{
+        color: @cwPageActionButtonIconColor;
+      }
+    }
+  }
+}
+
+ul.popout-top-container {
+  .btn .fa{
+    color: @cwPopupTitleTextColor;
+  }
+}
+
+div.cwDiagramBreadcrumb{
+  a.btn{
+    i.fa{
+      color:@cwPageActionButtonIconColor;
+    }
+  }
+}
