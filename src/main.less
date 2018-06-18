@@ -55,3 +55,18 @@ table.cw-matrix-advanced {
     }
   }
 }
+
+
+/* Mobile devices */
+@media screen and (max-width:1023px) and (min-width:240px){
+  /* tab user page */
+  .profile ul a{
+    color: @cwColor1; 
+  }
+
+  /* tab in view */
+  .content.page-menu-shown .page-options ul li.cwTabLink.selected a {
+    color: @cwColor1;
+    background: @cwMenuLeftMainNavigationBackgroundColorActive;
+  }
+}
