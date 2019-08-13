@@ -78,3 +78,59 @@ table.cw-matrix-advanced {
     background: @cwMenuLeftMainNavigationBackgroundColorActive;
   }
 }
+
+
+ul.navViews li.selected {
+  border-left: solid 1px @cwDiagramEditorMenuBackgroundColor;
+  border-right: solid 1px @cwDiagramEditorMenuBackgroundColor;
+}
+
+ 
+/* Simple Table */
+
+table.cw-grid tr th {
+  border-left: solid 1px @cwColor2;
+  border-bottom: solid 1px @cwColor2;
+  border-top: solid 1px @cwColor2;
+}
+
+
+table.cw-grid tr td {
+  border-color: @cwColor2;
+}
+
+ 
+div.simpletable-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #03A0CE;
+  background-color: #FFFFFF;
+  padding-bottom: 1px;
+}
+
+ 
+table.cw-grid th {
+    font-size: 12px;
+}
+
+li.cw-accordion-container:hover{
+    div.cw-accordion-header{
+        background-color: @cwAccordionHeaderBackgroundColor;
+        a{
+            color:@cwAccordionHeaderTextColor;
+        }
+    }
+    div.cw-accordion-content{
+        border-color:@cwAccordionHeaderBackgroundColor;
+    }
+}
+
+li.cw-accordion-container div.cw-accordion-header:hover{
+    background-color: @cwAccordionHeaderHoverBackgroundColor;
+    a{
+        color:@cwAccordionHeaderHoverTextColor;
+    }
+    +div.cw-accordion-content{
+        border-color:@cwAccordionHeaderHoverBackgroundColor;
+    }
+}
