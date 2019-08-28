@@ -3,7 +3,7 @@
 
 /* Masquer le bouton Print */
 a#cw_print_btn{
-	display: none;
+  display: none;
 }
 
 /* Properties group header */
@@ -87,16 +87,25 @@ ul.navViews li.selected {
 
  
 /* Simple Table */
-
 table.cw-grid tr th {
   border-left: solid 1px @cwColor2;
   border-bottom: solid 1px @cwColor2;
   border-top: solid 1px @cwColor2;
+  color: #FFFFFF;
+  background : @cwColor2;
+
 }
 
+table.cw-grid tr th:last-child {
+  border-right: solid 1px @cwColor2;
+}
 
 table.cw-grid tr td {
-  border-color: @cwColor2;
+  border-color: fade(#54cff3,40%);
+}
+
+table.cw-grid tr td:last-child {
+  border-right: solid 1px fade(#54cff3,40%);
 }
 
  
@@ -105,14 +114,31 @@ div.simpletable-title {
   font-size: 15px;
   color: #03A0CE;
   background-color: #FFFFFF;
-  padding-bottom: 1px;
+  padding-bottom: 0px;
+  padding-top: 15px;
 }
 
- 
+table.cw-grid {
+  padding-bottom: 30px;
+}
 table.cw-grid th {
     font-size: 12px;
 }
 
+table.cw-grid td ul.cw-list{
+    padding-left: 15px;
+}
+
+/*ul.cw-list{
+    list-style: none;
+}*/
+
+div.cwPropertiesTableContainer {
+  padding-bottom: 30px;
+}
+
+
+// Color Accordeon
 li.cw-accordion-container:hover{
     div.cw-accordion-header{
         background-color: @cwAccordionHeaderBackgroundColor;
@@ -133,4 +159,9 @@ li.cw-accordion-container div.cw-accordion-header:hover{
     +div.cw-accordion-content{
         border-color:@cwAccordionHeaderHoverBackgroundColor;
     }
+}
+
+// Spacing List Box
+ul.property-details .property-title {
+  padding: 0px;
 }
