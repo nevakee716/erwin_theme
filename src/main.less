@@ -2,7 +2,7 @@
 @import "../../_mixins";
 
 /* Masquer le bouton Print */
-a#cw_print_btn{
+a#cw_print_btn {
   display: none;
 }
 
@@ -37,26 +37,28 @@ ul.popout-top-container {
 div.cwDiagramBreadcrumb {
   a.btn {
     i.fa {
-      color:@cwPageActionButtonIconColor;
+      color: @cwPageActionButtonIconColor;
     }
   }
 }
 
 /* Table Complex button */
-.k-state-selected{
+.k-state-selected {
   color: @cwColor1;
 }
-th.k-header .k-state-active, .k-grid-toolbar .k-state-active {
-    color: @cwAccentColor;
+th.k-header .k-state-active,
+.k-grid-toolbar .k-state-active {
+  color: @cwAccentColor;
 }
 
 /* Advanced Matrix header */
 table.cw-matrix-advanced {
-  tr:hover{
+  tr:hover {
     th.cw-header {
       a {
         color: @cwBodyBackgroundColor;
-        div:before, div:after {
+        div:before,
+        div:after {
           background: @cwBodyBackgroundColor;
         }
       }
@@ -64,12 +66,11 @@ table.cw-matrix-advanced {
   }
 }
 
-
 /* Mobile devices */
-@media screen and (max-width:1023px) and (min-width:240px){
+@media screen and (max-width: 1023px) and (min-width: 240px) {
   /* tab user page */
-  .profile ul a{
-    color: @cwColor1; 
+  .profile ul a {
+    color: @cwColor1;
   }
 
   /* tab in view */
@@ -79,21 +80,18 @@ table.cw-matrix-advanced {
   }
 }
 
-
 ul.navViews li.selected {
   border-left: solid 1px @cwDiagramEditorMenuBackgroundColor;
   border-right: solid 1px @cwDiagramEditorMenuBackgroundColor;
 }
 
- 
 /* Simple Table */
 table.cw-grid tr th {
   border-left: solid 1px @cwColor2;
   border-bottom: solid 1px @cwColor2;
   border-top: solid 1px @cwColor2;
-  color: #FFFFFF;
-  background : @cwColor2;
-
+  color: #ffffff;
+  background: @cwColor2;
 }
 
 table.cw-grid tr th:last-child {
@@ -101,19 +99,18 @@ table.cw-grid tr th:last-child {
 }
 
 table.cw-grid tr td {
-  border-color: fade(#54cff3,40%);
+  border-color: fade(#54cff3, 40%);
 }
 
 table.cw-grid tr td:last-child {
-  border-right: solid 1px fade(#54cff3,40%);
+  border-right: solid 1px fade(#54cff3, 40%);
 }
 
- 
 div.simpletable-title {
   font-weight: bold;
   font-size: 15px;
-  color: #03A0CE;
-  background-color: #FFFFFF;
+  color: #03a0ce;
+  background-color: #ffffff;
   padding-bottom: 0px;
   padding-top: 15px;
 }
@@ -122,43 +119,42 @@ table.cw-grid {
   padding-bottom: 30px;
 }
 table.cw-grid th {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-table.cw-grid td ul.cw-list{
-    padding-left: 15px;
+table.cw-grid td ul.cw-list {
+  padding-left: 15px;
 }
 
-/*ul.cw-list{
-    list-style: none;
-}*/
+ul.cw-list {
+  list-style: none;
+}
 
 div.cwPropertiesTableContainer {
   padding-bottom: 30px;
 }
 
-
 // Color Accordeon
-li.cw-accordion-container:hover{
-    div.cw-accordion-header{
-        background-color: @cwAccordionHeaderBackgroundColor;
-        a{
-            color:@cwAccordionHeaderTextColor;
-        }
+li.cw-accordion-container:hover {
+  div.cw-accordion-header {
+    background-color: @cwAccordionHeaderBackgroundColor;
+    a {
+      color: @cwAccordionHeaderTextColor;
     }
-    div.cw-accordion-content{
-        border-color:@cwAccordionHeaderBackgroundColor;
-    }
+  }
+  div.cw-accordion-content {
+    border-color: @cwAccordionHeaderBackgroundColor;
+  }
 }
 
-li.cw-accordion-container div.cw-accordion-header:hover{
-    background-color: @cwAccordionHeaderHoverBackgroundColor;
-    a{
-        color:@cwAccordionHeaderHoverTextColor;
-    }
-    +div.cw-accordion-content{
-        border-color:@cwAccordionHeaderHoverBackgroundColor;
-    }
+li.cw-accordion-container div.cw-accordion-header:hover {
+  background-color: @cwAccordionHeaderHoverBackgroundColor;
+  a {
+    color: @cwAccordionHeaderHoverTextColor;
+  }
+  + div.cw-accordion-content {
+    border-color: @cwAccordionHeaderHoverBackgroundColor;
+  }
 }
 
 // Spacing List Box
