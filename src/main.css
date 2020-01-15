@@ -1,0 +1,149 @@
+/* GLOBAL */
+/* LOGIN */
+/* DIAGRAM */
+/* HOME PAGE */
+/* MENU LEFT */
+/* MAIN MENU */
+/* SUB MENU */
+/* PAGE TAB */
+/* DROPDOWN NOTIFICATIONS */
+/* SOCIAL */
+/* LIST BOX */
+/* PROPERTIES GROUP */
+/* BUTTONS */
+/* PAGE ACTIONS */
+/* ACCORDIONS */
+/* DISCUSSIONS */
+/* WORLD MAP */
+/* USER ZONE */
+/* POPUP */
+/* BADGES */
+/* TASKS & NOTIFICATIONS */
+/* GLOBAL SEARCH */
+/* TOP BAR */
+/* GRID */
+/* DIAGRAM TILE */
+/* MATRIX ADVANCED */
+/* Masquer le bouton Print */
+a#cw_print_btn {
+  display: none;
+}
+/* Properties group header */
+div.cwPropertiesTableHeader {
+  font-weight: bold;
+  border-bottom: 1px solid #03a0ce;
+}
+/* List Box header */
+ul.property-details .property-title {
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 1px solid #03a0ce;
+}
+ul.property-details .property-title .cw-property-details-right .btn:hover .fa {
+  color: #ffffff;
+}
+/* Profile button */
+ul.popout-top-container .btn .fa {
+  color: #ffffff;
+}
+/* Diagram breadcrumb */
+div.cwDiagramBreadcrumb a.btn i.fa {
+  color: #ffffff;
+}
+/* Table Complex button */
+.k-state-selected {
+  color: #03a0ce;
+}
+th.k-header .k-state-active,
+.k-grid-toolbar .k-state-active {
+  color: #e9636e;
+}
+/* Advanced Matrix header */
+table.cw-matrix-advanced tr:hover th.cw-header a {
+  color: #ffffff;
+}
+table.cw-matrix-advanced tr:hover th.cw-header a div:before,
+table.cw-matrix-advanced tr:hover th.cw-header a div:after {
+  background: #ffffff;
+}
+/* Mobile devices */
+@media screen and (max-width: 1023px) and (min-width: 240px) {
+  /* tab user page */
+  .profile ul a {
+    color: #03a0ce;
+  }
+  /* tab in view */
+  .content.page-menu-shown .page-options ul li.cwTabLink.selected a {
+    color: #03a0ce;
+    background: rgba(147, 176, 193, 0.15);
+  }
+}
+ul.navViews li.selected {
+  border-left: solid 1px #f1f1f1;
+  border-right: solid 1px #f1f1f1;
+}
+/* Simple Table */
+table.cw-grid tr th {
+  border-left: solid 1px #03a0ce;
+  border-bottom: solid 1px #03a0ce;
+  border-top: solid 1px #03a0ce;
+  color: #ffffff;
+  background: #03a0ce;
+}
+table.cw-grid tr th:last-child {
+  border-right: solid 1px #03a0ce;
+}
+table.cw-grid tr td {
+  /* border-color: rgba(84, 207, 243, 0.4); */
+  /* background-color: rgba(93, 255, 10, 0.12); */
+}
+table.cw-grid tr td:last-child {
+  border-right: solid 1px rgb(84, 207, 243);
+}
+div.simpletable-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #03a0ce;
+  background-color: #ffffff;
+  padding-bottom: 0px;
+  padding-top: 15px;
+}
+table.cw-grid {
+  padding-bottom: 30px;
+}
+table.cw-grid th {
+  font-size: 12px;
+}
+table.cw-grid td ul.cw-list {
+  padding-left: 15px;
+}
+ul.cw-list {
+  list-style: none;
+}
+div.cwPropertiesTableContainer {
+  padding-bottom: 30px;
+}
+li.cw-accordion-container:hover div.cw-accordion-header {
+  background-color: #03a0ce;
+}
+li.cw-accordion-container:hover div.cw-accordion-header a {
+  color: #ffffff;
+}
+li.cw-accordion-container:hover div.cw-accordion-content {
+  border-color: #03a0ce;
+}
+li.cw-accordion-container div.cw-accordion-header:hover {
+  background-color: rgba(147, 176, 193, 0.15);
+}
+li.cw-accordion-container div.cw-accordion-header:hover a {
+  color: #03a0ce;
+}
+li.cw-accordion-container div.cw-accordion-header:hover + div.cw-accordion-content {
+  border-color: rgba(147, 176, 193, 0.15);
+}
+ul.property-details .property-title {
+  padding: 0px;
+}
+th.cw-header div {
+  color: #ffffff;
+}
