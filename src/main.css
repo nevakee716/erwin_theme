@@ -94,11 +94,10 @@ table.cw-grid tr th:last-child {
   border-right: solid 1px #03a0ce;
 }
 table.cw-grid tr td {
-  /* border-color: rgba(84, 207, 243, 0.4); */
-  /* background-color: rgba(93, 255, 10, 0.12); */
+  border-color: rgba(84, 207, 243, 0.4);
 }
 table.cw-grid tr td:last-child {
-  border-right: solid 1px rgb(84, 207, 243);
+  border-right: solid 1px rgba(84, 207, 243, 0.4);
 }
 div.simpletable-title {
   font-weight: bold;
@@ -145,5 +144,8 @@ ul.property-details .property-title {
   padding: 0px;
 }
 th.cw-header div {
+  color: #ffffff;
+}
+.popout-title a {
   color: #ffffff;
 }
