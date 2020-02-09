@@ -149,3 +149,13 @@ th.cw-header div {
 .popout-title a {
   color: #ffffff;
 }
+.cwDiagramExplosionMultipleChoice li {
+  text-align: inherit;
+}
+.cwDiagramExplosionMultipleChoice li:hover {
+  background-color: #03a0ce;
+  color: white;
+}
+.cwDiagramExplosionMultipleChoice li:hover a {
+  color: white;
+}
