@@ -3,42 +3,38 @@
 @import "./_paths";
 @import "./_common";
 
-@white:#FFFFFF;
-@black:#000000;
-@whitesmoke:#F5F5F5;
+@white: #ffffff;
+@black: #000000;
+@whitesmoke: #f5f5f5;
 
 // primary palette
-@nauticalNavy: #26276D;
-@beaconBlue: #03A0CE;
-@duskGray: #5C5D61;
-@mistGray: #DBD9D6;
+@nauticalNavy: #26276d;
+@beaconBlue: #03a0ce;
+@duskGray: #5c5d61;
+@mistGray: #dbd9d6;
 // secondary palette
-@oceanBlue: #1C5FAB;
-@seaGreen: #00A9A2;
-@reefRed: #E9636E;
-@sunsetOrange: #F79548;
-@lanternYellow: #F6C65B;
+@oceanBlue: #1c5fab;
+@seaGreen: #00a9a2;
+@reefRed: #e9636e;
+@sunsetOrange: #f79548;
+@lanternYellow: #f6c65b;
 
 @lightGray: rgba(147, 176, 193, 0.15);
 
-@cwColor1Shade: #546E7A;
+@cwColor1Shade: #546e7a;
 @cwColor1: @beaconBlue;
-@cwColor1Tint: #5C5D61;
+@cwColor1Tint: #5c5d61;
 
 @cwColor2Shade: lighten(@beaconBlue, 20%);
 @cwColor2: @beaconBlue;
-@cwColor2Tint: #4DB6AC;
+@cwColor2Tint: #4db6ac;
 
 @cwErrorColor: @reefRed;
 @cwNotificationColor: @seaGreen;
 @cwTextColor: @duskGray;
 @cwAccentColor: @reefRed;
 
-@cwShadowColor:#BDBDBD; //v4.03
-
-
-
-
+@cwShadowColor: #bdbdbd; //v4.03
 
 /* GLOBAL */
 @cwFont: "Roboto Regular", "Arial", "Corbel", "Segoe UI";
@@ -59,8 +55,8 @@
 /* LOGIN */
 @cwLoginTextColor: @cwTextColor;
 @cwLoginLabelColor: @cwColor2; // v4.0
-@cwLoginBackgroundColor:@white;
-@cwLoginTextBoxBorderColor: #CFD8DC; // v4.0
+@cwLoginBackgroundColor: @white;
+@cwLoginTextBoxBorderColor: #cfd8dc; // v4.0
 @cwLoginTextBoxFocusBorderColor: @cwColor2; // v4.0
 @cwSiteSelectionTextBackground: @cwColor2; // v4.0
 @cwSiteSelectionTextColor: @whitesmoke; // v4.03
@@ -79,12 +75,11 @@
 /* HOME PAGE */
 @cwHomePagePaddingTop: 20px;
 @cwHomePagePaddingLeft: 30px;
-@cwHomePageRoleIconBackgroundColor: #E0F2F1; //v4.01
+@cwHomePageRoleIconBackgroundColor: #e0f2f1; //v4.01
 @cwHomePageFavoriteIconBackgroundColor: @beaconBlue; //v4.01
 @cwHomePageViewTextColor: @cwGlobalLinkTextColor;
-@cwHomePageFavoriteTextColor:@white;//v4.03
-@cwHomePageRoleIconBackgroundColorHover: darken(@cwHomePageRoleIconBackgroundColor, 5%);//v4.03
-
+@cwHomePageFavoriteTextColor: @white; //v4.03
+@cwHomePageRoleIconBackgroundColorHover: darken(@cwHomePageRoleIconBackgroundColor, 5%); //v4.03
 
 /* MENU LEFT */
 
@@ -92,7 +87,7 @@
 @cwMenuLeftMainNavigationBackgroundColor: @white;
 @cwMenuLeftMainNavigationTextColor: @nauticalNavy;
 @cwMenuLeftMainNavigationBackgroundColorHover: @lightGray;
-@cwMenuLeftMainNavigationTextColorHover:  @beaconBlue;
+@cwMenuLeftMainNavigationTextColorHover: @beaconBlue;
 @cwMenuLeftMainNavigationBackgroundColorActive: @cwMenuLeftMainNavigationBackgroundColorHover;
 @cwMenuLeftMainNavigationTextColorActive: @cwMenuLeftMainNavigationTextColorHover;
 
@@ -106,18 +101,18 @@
 @cwMenuLeftTabBackgroundColor: lighten(@mistGray, 10%);
 @cwMenuLeftTabTitleColor: @nauticalNavy;
 
-@cwMenuLeftTabSelectedViewTextColor:@beaconBlue; // v4.03
+@cwMenuLeftTabSelectedViewTextColor: @beaconBlue; // v4.03
 @cwMenuLeftTabSelectedViewBackgroundColor: @white;
 
-@cwMenuLeftTabSelectedViewTabSelectedTextColor:@beaconBlue; //v4.03
-@cwMenuLeftTabSelectedViewTabSelectedBackgroundColor: @lightGray ; //v4.03
+@cwMenuLeftTabSelectedViewTabSelectedTextColor: @beaconBlue; //v4.03
+@cwMenuLeftTabSelectedViewTabSelectedBackgroundColor: @lightGray; //v4.03
 
-@cwMenuLeftTabSelectedViewTabTextColorHover:@beaconBlue; //v4.03
+@cwMenuLeftTabSelectedViewTabTextColorHover: @beaconBlue; //v4.03
 @cwMenuLeftTabSelectedViewTabBackgroundColorHover: @cwMenuLeftTabSelectedViewTabSelectedBackgroundColor; //v4.03
 
 @cwMenuLeftBorderColor: @cwMenuLeftMainNavigationBackgroundColor; //v4.03
 @cwMenuLeftTabBorderColor: @cwMenuLeftTabBackgroundColor; //v4.03
-@cwMenuLeftToggleZoneBackgroundColor:@cwMenuLeftBorderColor; //v4.03
+@cwMenuLeftToggleZoneBackgroundColor: @cwMenuLeftBorderColor; //v4.03
 
 /* DROPDOWN NOTIFICATIONS */
 @cwNotificationMessageBackgroundColor: @cwNotificationColor;
@@ -126,7 +121,7 @@
 @cwNotificationErrorTextColor: @white;
 
 /* SOCIAL */
-@cwSocialRatingStarBackgroundAndBorder:#ffda20; //v4.03
+@cwSocialRatingStarBackgroundAndBorder: #ffda20; //v4.03
 
 /* LIST BOX */
 @cwListBoxPropertyHeaderBackgroundColor: @cwBodyBackgroundColor;
@@ -151,15 +146,15 @@
 @cwButtonSubmitTextColor: @white;
 @cwButtonSubmitBorderColor: darken(@cwButtonSubmitBackgroundColor, 10%);
 @cwButtonTextColor: @cwTextColor;
-@cwButtonBackgroundColor: #ECEFF1;
+@cwButtonBackgroundColor: #eceff1;
 @cwButtonIconColor: @beaconBlue;
 @cwButtonBorderColor: @cwTextColor;
 
-@cwButtonSelectedBackgroundColor:darken(@cwButtonBackgroundColor, 5%); //v4.03
-@cwButtonBoxShadowColor:@cwShadowColor; //v4.03
+@cwbuttonselectedbackgroundcolor:darken (@cwButtonBackgroundColor, 5%); //v4.03
+@cwButtonBoxShadowColor: @cwShadowColor; //v4.03
 
 /* PAGE ACTIONS */
-@cwPageActionButtonBackgroundColor: @nauticalNavy;
+@cwPageActionButtonBackgroundColor: @beaconBlue;
 @cwPageActionButtonIconColor: @white;
 @cwPageActionButtonBorderColor: @cwColor1Shade;
 
@@ -200,7 +195,7 @@
 
 /* TASKS & NOTIFICATIONS */
 @cwWorkflowTaskListTaskActionsColor: lighten(@beaconBlue, 20%); //v3.0
-@cwWorkflowTaskApprovalApproved: #47AE47; //v3.0
+@cwWorkflowTaskApprovalApproved: #47ae47; //v3.0
 @cwWorkflowTaskApprovalRejected: @cwErrorColor; //v3.0
 @cwWorkflowDelegatedTaskColor: @sunsetOrange; //v3.0
 @cwWorflowTaskBackgroundColor: lighten(@beaconBlue, 35%);
@@ -208,8 +203,8 @@
 @cwWorflowNotificationBackgroundColor: lighten(@beaconBlue, 30%);
 @cwWorflowNotificationTextColor: @cwTextColor;
 @cwWorflowDueDateCalendarBackgroundColor: @white;
-@cwWorflowDueDateCalendarOverdueMonthTextColor: #F5F5F5;
-@cwWorflowDueDateCalendarDueBackgroundColor: #FFC266;
+@cwWorflowDueDateCalendarOverdueMonthTextColor: #f5f5f5;
+@cwWorflowDueDateCalendarDueBackgroundColor: #ffc266;
 @cwWorflowDueDateCalendarOverdueBackgroundColor: @cwErrorColor;
 
 /* GLOBAL SEARCH */
@@ -218,26 +213,26 @@
 @cwGlobalSearchBackgroundColor: @cwMenuLeftMainNavigationBackgroundColor; //v4.0
 @cwGlobalSearchResultsTextColor: @cwFontTextColor; //v4.0
 @cwGlobalSearchResultsBackgroundColor: @whitesmoke; //v4.0
-@cwGlobalSearchResultShadowColor:@cwShadowColor; //v4.03
+@cwGlobalSearchResultShadowColor: @cwShadowColor; //v4.03
 
 /* TOP BAR */
 @cwTopBarHeight: 40px; //v4.0
-@cwTopBarBackgroundColor: #ECEFF1; //v4.0
+@cwTopBarBackgroundColor: #eceff1; //v4.0
 @cwTopBarProfileLinkColor: @nauticalNavy; //v4.0
 @cwTopBarProfileLinkHoverColor: @beaconBlue; //v4.0
 
 /* GRID */
-@cwGridButtonsColor:@beaconBlue; //v4.03
-@cwGridPaginationBackgroundColor:@cwPropertiesTableHeaderBackgroundColor; //v4.03
-@cwGridColumnHeaderText:@cwPropertiesTableHeaderTextColor; //v4.03
-@cwGridColumnHeaderBackground:@cwPropertiesTableHeaderBackgroundColor; //v4.03
+@cwGridButtonsColor: @beaconBlue; //v4.03
+@cwGridPaginationBackgroundColor: @cwPropertiesTableHeaderBackgroundColor; //v4.03
+@cwGridColumnHeaderText: @cwPropertiesTableHeaderTextColor; //v4.03
+@cwGridColumnHeaderBackground: @cwPropertiesTableHeaderBackgroundColor; //v4.03
 
 /* DIAGRAM TILE */
-@cwDiagramTileNameBackground:lighten(@beaconBlue, 50%); //v4.03
-@cwDiagramTileNameBackgroundHover:darken(@cwDiagramTileNameBackground, 5%); //v4.03
-@cwDiagramTileNameTextColor:@white; //v4.03
+@cwdiagramtilenamebackground:lighten (@beaconBlue, 50%); //v4.03
+@cwdiagramtilenamebackgroundhover:darken (@cwDiagramTileNameBackground, 5%); //v4.03
+@cwDiagramTileNameTextColor: @white; //v4.03
 
 /* MATRIX ADVANCED */
-@cwMatrixBorderColor:#eee;
-@cwMatrixIntersectionBackground:#dde0e0;
-@cwMatrixButtonHoverColor:#07655d;
+@cwMatrixBorderColor: #eee;
+@cwMatrixIntersectionBackground: #dde0e0;
+@cwMatrixButtonHoverColor: #07655d;

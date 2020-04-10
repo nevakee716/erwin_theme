@@ -1,3 +1,4 @@
+/* CUSTOM VARIABLES */
 /* GLOBAL */
 /* LOGIN */
 /* DIAGRAM */
@@ -11,6 +12,7 @@
 /* LIST BOX */
 /* PROPERTIES GROUP */
 /* BUTTONS */
+@cwbuttonselectedbackgroundcolor :darken (#ffffff, 5%);
 /* PAGE ACTIONS */
 /* ACCORDIONS */
 /* DISCUSSIONS */
@@ -21,9 +23,9 @@
 /* TASKS & NOTIFICATIONS */
 /* GLOBAL SEARCH */
 /* TOP BAR */
-/* GRID */
 /* DIAGRAM TILE */
 /* MATRIX ADVANCED */
+/* DIAGRAM OVERLAY */
 /* Masquer le bouton Print */
 a#cw_print_btn {
   display: none;
@@ -44,6 +46,41 @@ ul.property-details .property-title .cw-property-details-right .btn:hover .fa {
 }
 /* Profile button */
 ul.popout-top-container .btn .fa {
+  color: #ffffff;
+}
+body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a,
+body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a:hover {
+  color: #ffffff;
+  background-color: #03a0ce;
+  border: solid 4px #03a0ce;
+}
+body #cw-top-bar .tb-profile-container .tb-profile-popout table td a,
+body #cw-top-bar .tb-profile-container .tb-profile-popout table td a:hover {
+  color: #03a0ce;
+}
+body #cw-top-bar .tb-profile-container .tb-profile-popout {
+  border: 0px solid #ffffff;
+}
+.tb-profile-container .tb-username,
+.tb-profile-container i {
+  color: #ffffff;
+}
+.tb-profile-container .user {
+  background-color: #ffffff;
+}
+/* Top Breadcrumb*/
+#cw-smart-bc {
+  color: #ffffff;
+}
+#cw-smart-bc a,
+#cw-smart-bc li .cw-bc-seperator {
+  color: #ffffff;
+}
+.cw-bc-dropdown-content a {
+  background-color: #03a0ce;
+}
+.cw-bc-dropdown-default span,
+.cw-bc-dropdown-default span:hover {
   color: #ffffff;
 }
 /* Diagram breadcrumb */
