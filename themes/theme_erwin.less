@@ -15,9 +15,6 @@
 @warningColor: #f79548;
 @cwNotificationColor: @validateColor;
 
-@import "./_paths";
-@import "./_common";
-
 @cwColor1Shade: #546e7a;
 @cwColor1: @mainColor;
 @cwColor1Tint: #5c5d61;
@@ -146,7 +143,7 @@
 @cwButtonIconColor: @mainColor;
 @cwButtonBorderColor: @cwTextColor;
 
-@cwbuttonselectedbackgroundcolor:darken (@cwButtonBackgroundColor, 5%); //v4.03
+@cwButtonSelectedBackgroundColor: darken(@cwButtonBackgroundColor, 5%); //v4.03
 @cwButtonBoxShadowColor: @cwShadowColor; //v4.03
 
 /* PAGE ACTIONS */
@@ -223,8 +220,8 @@
 
 /* DIAGRAM TILE */
 
-@cwdiagramtilenamebackground:lighten (@mainColor, 50%); //v4.03
-@cwdiagramtilenamebackgroundhover:darken (@cwDiagramTileNameBackground, 5%); //v4.03
+@cwDiagramTileNameBackground: lighten(@mainColor, 50%); //v4.03
+@cwDiagramTileNameBackgroundHover: lighten(@mainColor, 45%); //v4.03
 @cwDiagramTileNameTextColor: @white; //v4.03
 
 /* MATRIX ADVANCED */

@@ -34,47 +34,46 @@ ul.popout-top-container {
 }
 
 body #cw-top-bar .page-title {
-  color: @white;
+  color: @cwBodyBackgroundColor;
 }
 
 body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a,
 body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a:hover {
-  color: @white;
-  background-color: @mainColor;
-  border: solid 4px @mainColor;
+  color: @cwBodyBackgroundColor;
+  background-color: @cwColor1;
+  border: solid 4px @cwColor1;
 }
 body #cw-top-bar .tb-profile-container .tb-profile-popout table td a,
 body #cw-top-bar .tb-profile-container .tb-profile-popout table td a:hover {
-  color: @mainColor;
+  color: @cwColor1;
 }
 body #cw-top-bar .tb-profile-container .tb-profile-popout {
-  border: 0px solid @white;
+  border: 0px solid @cwBodyBackgroundColor;
 }
 .tb-profile-container {
   .tb-username,
   i {
-    color: @white;
+    color: @cwBodyBackgroundColor;
   }
   .user {
-    background-color: @white;
+    background-color: @cwBodyBackgroundColor;
   }
 }
 
 /* Top Breadcrumb*/
 
 #cw-smart-bc {
-  color: @white;
-  a,
-  li .cw-bc-seperator {
-    color: @white;
+  color: @cwBodyBackgroundColor;
+  a,li .cw-bc-seperator {
+    color: @cwBodyBackgroundColor;
   }
 }
 .cw-bc-dropdown-content a {
-  background-color: @mainColor;
+  background-color: @cwColor1;
 }
 .cw-bc-dropdown-default span,
 .cw-bc-dropdown-default span:hover {
-  color: @white;
+  color: @cwBodyBackgroundColor;
 }
 
 /* Diagram breadcrumb */
@@ -93,6 +92,11 @@ div.cwDiagramBreadcrumb {
 th.k-header .k-state-active,
 .k-grid-toolbar .k-state-active {
   color: @cwAccentColor;
+}
+
+div.k-header.k-grid-toolbar {
+  background: @cwGridButtonsColor;
+  color: @cwBodyBackgroundColor;
 }
 
 /* Advanced Matrix header */
@@ -134,7 +138,7 @@ table.cw-grid tr th {
   border-left: solid 1px @cwColor2;
   border-bottom: solid 1px @cwColor2;
   border-top: solid 1px @cwColor2;
-  color: #ffffff;
+  color: @cwBodyBackgroundColor;
   background: @cwColor2;
 }
 
@@ -154,7 +158,7 @@ div.simpletable-title {
   font-weight: bold;
   font-size: 15px;
   color: #03a0ce;
-  background-color: #ffffff;
+  background-color: @cwBodyBackgroundColor;
   padding-bottom: 0px;
   padding-top: 15px;
 }
@@ -208,14 +212,14 @@ ul.property-details .property-title {
 
 //matrix
 th.cw-header div {
-  color: #ffffff;
+  color: @cwBodyBackgroundColor;
 }
 
 //url in popout cds
 
 .popout-title {
   a {
-    color: #ffffff;
+    color: @cwBodyBackgroundColor;
   }
 }
 
@@ -226,8 +230,8 @@ th.cw-header div {
 // multiple choice for explosions
 .cwDiagramExplosionMultipleChoice li:hover {
   background-color: @cwColor1;
-  color: white;
+  color: @cwBodyBackgroundColor;
   a {
-    color: white;
+    color: @cwBodyBackgroundColor;
   }
 }
