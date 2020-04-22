@@ -48,6 +48,9 @@ ul.property-details .property-title .cw-property-details-right .btn:hover .fa {
 ul.popout-top-container .btn .fa {
   color: #ffffff;
 }
+body #cw-top-bar .page-title {
+  color: #ffffff;
+}
 body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a,
 body #cw-top-bar .tb-profile-container .tb-profile-popout table .logout td a:hover {
   color: #ffffff;
@@ -93,7 +96,7 @@ div.cwDiagramBreadcrumb a.btn i.fa {
 }
 th.k-header .k-state-active,
 .k-grid-toolbar .k-state-active {
-  color: #e9636e;
+  color: #e91527;
 }
 /* Advanced Matrix header */
 table.cw-matrix-advanced tr:hover th.cw-header a {
