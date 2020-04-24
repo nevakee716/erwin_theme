@@ -64,7 +64,8 @@ body #cw-top-bar .tb-profile-container .tb-profile-popout {
 
 #cw-smart-bc {
   color: @cwBodyBackgroundColor;
-  a,li .cw-bc-seperator {
+  a,
+  li .cw-bc-seperator {
     color: @cwBodyBackgroundColor;
   }
 }
@@ -147,17 +148,17 @@ table.cw-grid tr th:last-child {
 }
 
 table.cw-grid tr td {
-  border-color: fade(#54cff3, 40%);
+  border-color: fade(@cwColor2, 40%);
 }
 
 table.cw-grid tr td:last-child {
-  border-right: solid 1px fade(#54cff3, 40%);
+  border-right: solid 1px fade(@cwColor2, 40%);
 }
 
 div.simpletable-title {
   font-weight: bold;
   font-size: 15px;
-  color: #03a0ce;
+  color: @cwColor2;
   background-color: @cwBodyBackgroundColor;
   padding-bottom: 0px;
   padding-top: 15px;
