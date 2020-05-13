@@ -197,7 +197,7 @@ li.cw-accordion-container:hover {
 }
 
 li.cw-accordion-container div.cw-accordion-header:hover {
-  background-color: @cwAccordionHeaderHoverBackgroundColor;
+  background-color: @cwAccordionHeaderHoverBackgroundColor !important;
   a {
     color: @cwAccordionHeaderHoverTextColor;
   }
@@ -206,6 +206,41 @@ li.cw-accordion-container div.cw-accordion-header:hover {
   }
 }
 
+li.cw-accordion-container:hover div.cw-accordion-header,
+li.cw-accordion-container div.cw-accordion-header {
+  background-color: darken(@cwAccordionHeaderBackgroundColor, 10%);
+}
+
+li.cw-accordion-container {
+  li.cw-accordion-container:hover div.cw-accordion-header,
+  li.cw-accordion-container div.cw-accordion-header {
+    background-color: darken(@cwAccordionHeaderBackgroundColor, 5%);
+  }
+}
+li.cw-accordion-container li.cw-accordion-container {
+  li.cw-accordion-container:hover div.cw-accordion-header,
+  li.cw-accordion-container div.cw-accordion-header {
+    background-color: @cwAccordionHeaderBackgroundColor;
+  }
+}
+li.cw-accordion-container li.cw-accordion-container li.cw-accordion-container {
+  li.cw-accordion-container:hover div.cw-accordion-header,
+  li.cw-accordion-container div.cw-accordion-header {
+    background-color: lighten(@cwAccordionHeaderBackgroundColor, 5%);
+  }
+}
+li.cw-accordion-container li.cw-accordion-container li.cw-accordion-container li.cw-accordion-container {
+  li.cw-accordion-container:hover div.cw-accordion-header,
+  li.cw-accordion-container div.cw-accordion-header {
+    background-color: lighten(@cwAccordionHeaderBackgroundColor, 10%);
+  }
+}
+li.cw-accordion-container li.cw-accordion-container li.cw-accordion-container li.cw-accordion-container {
+  li.cw-accordion-container:hover div.cw-accordion-header,
+  li.cw-accordion-container div.cw-accordion-header {
+    background-color: lighten(@cwAccordionHeaderBackgroundColor, 15%);
+  }
+}
 // Spacing List Box
 ul.property-details .property-title {
   padding: 0px;
