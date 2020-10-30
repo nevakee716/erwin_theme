@@ -12,7 +12,6 @@
 /* LIST BOX */
 /* PROPERTIES GROUP */
 /* BUTTONS */
-@cwbuttonselectedbackgroundcolor :darken (#ffffff, 5%);
 /* PAGE ACTIONS */
 /* ACCORDIONS */
 /* DISCUSSIONS */
@@ -179,11 +178,9 @@ li.cw-accordion-container div.cw-accordion-header:hover {
   background-color: rgba(147, 176, 193, 0.15) !important;
   color: #03a0ce;
 }
-li.cw-accordion-container div.cw-accordion-header:hover a {
+li.cw-accordion-container div.cw-accordion-header:hover a,
+li.cw-accordion-container div.cw-accordion-header:hover span {
   color: #03a0ce;
-}
-li.cw-accordion-container div.cw-accordion-header:hover span.cw-accordion {
-  color: #03a0ce !important;
 }
 li.cw-accordion-container div.cw-accordion-header:hover + div.cw-accordion-content {
   border-color: rgba(147, 176, 193, 0.15);
