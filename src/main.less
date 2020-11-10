@@ -273,3 +273,27 @@ th.cw-header div {
     color: @cwBodyBackgroundColor;
   }
 }
+
+body .main-nav {
+  a.cw-menu-link.activeLink,
+  a.cw-menu-link:hover,
+  a.cw-menu-link:focus {
+    border-right: solid 3px;
+  }
+}
+
+body .main-nav .main-level > .active > a.hassub .cw-menu-arrow-zone .cw-menu-arrow {
+  border-right-color: @cwColor1;
+}
+body .main-nav .main-level .cw-menu-zone .sub-level {
+  a.cw-menu-link.activeLink,
+  a.cw-menu-link:hover,
+  a.cw-menu-link:focus {
+    border-right-color: @cwColor1;
+  }
+}
+
+li.cwTabLink.selected {
+  border-right: solid 3px;
+  border-right-color: @cwColor1;
+}

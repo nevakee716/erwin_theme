@@ -228,3 +228,20 @@ th.cw-header div {
 .cwDiagramExplosionMultipleChoice li:hover a {
   color: #ffffff;
 }
+body .main-nav a.cw-menu-link.activeLink,
+body .main-nav a.cw-menu-link:hover,
+body .main-nav a.cw-menu-link:focus {
+  border-right: solid 3px;
+}
+body .main-nav .main-level > .active > a.hassub .cw-menu-arrow-zone .cw-menu-arrow {
+  border-right-color: #03a0ce;
+}
+body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link.activeLink,
+body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link:hover,
+body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link:focus {
+  border-right-color: #03a0ce;
+}
+li.cwTabLink.selected {
+  border-right: solid 3px;
+  border-right-color: #03a0ce;
+}
