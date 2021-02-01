@@ -440,108 +440,120 @@
   div.property-box {
     min-width: 600px;
     margin-bottom: 1.5rem;
+    max-width: 2010px;
   }
-  // helptext
-  div.CwPropertiesLayoutHelpText {
-    background-color: white;
-    margin-bottom: 1.5rem;
-    &[id*="noicon"] {
-      .fa {
-        display: none;
-      }
+}
+// helptext
+div.CwPropertiesLayoutHelpText {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  &[id*="noicon"] {
+    .fa {
+      display: none;
     }
   }
-  // matrix
-  .cw-matrix-content {
-    margin-bottom: 1.5rem;
-  }
-  table.cw-matrix-advanced tr:hover th {
-    background-color: transparent !important;
-  }
-  .cw-matrix-col-header,
-  .cw-matrix-row-header {
-    background-color: transparent !important;
-    border: none !important;
-    color: @cwColor1!important;
-    border-bottom: solid 1px fade(@cwColor2, 40%) !important;
+}
+// matrix
+.cw-matrix-content {
+  margin-bottom: 1.5rem;
+}
+table.cw-matrix-advanced tr:hover th {
+  background-color: transparent !important;
+}
+.cw-matrix-col-header,
+.cw-matrix-row-header {
+  background-color: transparent !important;
+  border: none !important;
+  color: @cwColor1!important;
+  border-bottom: solid 1px fade(@cwColor2, 40%) !important;
 
-    a div {
-      color: @cwColor1 !important;
-      &::before,
-      &::after {
-        display: none;
-      }
+  a div {
+    color: @cwColor1 !important;
+    &::before,
+    &::after {
+      display: none;
     }
   }
+}
 
-  // diagram
-  ul.cw-diagram-zone li.cw-diagram-zone {
-    // background-color: @cwColor1;
-  }
+// diagram
+ul.cw-diagram-zone li.cw-diagram-zone {
+  // background-color: @cwColor1;
+}
 
-  .cwDiagramBreadcrumb ul.cwDiagramBreadcrumbZone li.cwDiagramBreadcrumbZoneRight a.btn {
-    &:hover {
-      i.fa {
-        color: white;
-      }
-    }
-
+.cwDiagramBreadcrumb ul.cwDiagramBreadcrumbZone li.cwDiagramBreadcrumbZoneRight a.btn {
+  &:hover {
     i.fa {
-      color: #03a0ce;
+      color: white;
     }
   }
 
-  .cwDiagramBreadcrumb {
-    background-color: white;
-    border-bottom: 1px solid @cwColor1;
+  i.fa {
+    color: #03a0ce;
   }
+}
 
-  //chart
-  .k-stockchart,
-  div.k-chart,
-  div.k-gauge,
-  span.k-sparkline {
-    background-color: white;
-  }
-  .cw-dashboard-container {
-    margin-bottom: 0px;
-  }
-  //search
-  a.cw-searchengin-clear.btn i {
-    color: white;
-  }
-  //property table
-  div.cwPropertiesTableContainer {
-    padding-bottom: 0px;
-    margin-bottom: 1.5rem;
-    padding: 1.25rem;
-    max-width: 100%;
-    margin-right: 0px;
-    table.cwPropertiesTable {
-      border-collapse: unset;
-      tr {
-        td,
-        th {
-          border: none;
-        }
-      }
-      tr:not(:last-child) {
-        td,
-        th {
-          border: none;
-          border-bottom: 1px solid rgba(55, 131, 154, 0.1);
-        }
+.cwDiagramBreadcrumb {
+  background-color: white;
+  border-bottom: 1px solid @cwColor1;
+}
+
+//chart
+.k-stockchart,
+div.k-chart,
+div.k-gauge,
+span.k-sparkline {
+  background-color: white;
+}
+.cw-dashboard-container {
+  margin-bottom: 0px;
+}
+//search
+a.cw-searchengin-clear.btn i {
+  color: white;
+}
+//property table
+div.cwPropertiesTableContainer {
+  padding-bottom: 0px;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  max-width: 100%;
+  margin-right: 0px;
+  table.cwPropertiesTable {
+    border-collapse: unset;
+    tr {
+      td,
+      th {
+        border: none;
       }
     }
-  }
-
-  //memotext
-  .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText {
-    td:hover {
-      background-color: white;
+    tr:not(:last-child) {
+      td,
+      th {
+        border: none;
+        border-bottom: 1px solid rgba(55, 131, 154, 0.1);
+      }
     }
   }
-  //complexe table
+}
+
+//memotext
+.cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText {
+  td:hover {
+    background-color: white;
+  }
+}
+//complexe table
+
+div.empty.k-grid {
+  width: 100%;
+  td {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+  }
+  tr:hover {
+    background-color: @cwBodyBackgroundColor;
+  }
   div.k-header.k-grid-toolbar {
     color: rgb(255, 255, 255);
   }
@@ -556,17 +568,6 @@
   td.k-group-cell {
     background-color: white;
   }
-  div.empty.k-grid {
-    width: 100%;
-    td {
-      border-style: solid;
-      border-width: 0 0 1px 0;
-    }
-    tr:hover {
-      background-color: @cwBodyBackgroundColor;
-    }
-  }
-
   .k-grid-header th.k-header {
     border-width: 0;
   }

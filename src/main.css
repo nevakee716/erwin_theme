@@ -360,6 +360,7 @@ body:not(.cw_print) .page-content-wrap .page-content {
 div.property-box {
   min-width: 600px;
   margin-bottom: 1.5rem;
+  max-width: 2010px;
 }
 div.CwPropertiesLayoutHelpText {
   background-color: white;
@@ -435,20 +436,6 @@ div.cwPropertiesTableContainer table.cwPropertiesTable tr:not(:last-child) th {
 .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText td:hover {
   background-color: white;
 }
-div.k-header.k-grid-toolbar {
-  color: #ffffff;
-}
-.k-button {
-  border: none;
-  background-color: white;
-}
-.k-alt,
-.k-grouping-header,
-.k-grouping-row,
-.k-grouping-row td,
-td.k-group-cell {
-  background-color: white;
-}
 div.empty.k-grid {
   width: 100%;
 }
@@ -459,37 +446,51 @@ div.empty.k-grid td {
 div.empty.k-grid tr:hover {
   background-color: rgba(55, 131, 154, 0.1);
 }
-.k-grid-header th.k-header {
-  border-width: 0;
+div.empty.k-grid div.k-header.k-grid-toolbar {
+  color: #ffffff;
 }
-.k-primary {
-  color: #2e2e2e;
-}
-.k-grid-filter {
-  outline: -webkit-focus-ring-color auto 0px;
-}
-.k-pager-wrap {
+div.empty.k-grid .k-button {
+  border: none;
   background-color: white;
 }
-.k-pager-wrap .k-state-selected {
+div.empty.k-grid .k-alt,
+div.empty.k-grid .k-grouping-header,
+div.empty.k-grid .k-grouping-row,
+div.empty.k-grid .k-grouping-row td,
+div.empty.k-grid td.k-group-cell {
+  background-color: white;
+}
+div.empty.k-grid .k-grid-header th.k-header {
+  border-width: 0;
+}
+div.empty.k-grid .k-primary {
+  color: #2e2e2e;
+}
+div.empty.k-grid .k-grid-filter {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+div.empty.k-grid .k-pager-wrap {
+  background-color: white;
+}
+div.empty.k-grid .k-pager-wrap .k-state-selected {
   background-color: white;
   border-color: white;
 }
-.k-pager-wrap .k-dropdown-wrap {
+div.empty.k-grid .k-pager-wrap .k-dropdown-wrap {
   background-color: white !important;
   border-color: white !important;
 }
-.k-pager-wrap .k-dropdown-wrap.k-state-focused {
+div.empty.k-grid .k-pager-wrap .k-dropdown-wrap.k-state-focused {
   background-color: white !important;
   border-color: white !important;
   box-shadow: 0 0 0;
 }
-.k-pager-wrap .k-link {
+div.empty.k-grid .k-pager-wrap .k-link {
   border-color: white;
 }
-.k-pager-wrap .k-link:hover {
+div.empty.k-grid .k-pager-wrap .k-link:hover {
   border-color: white;
 }
-.k-pager-wrap .k-link:hover .k-icon {
+div.empty.k-grid .k-pager-wrap .k-link:hover .k-icon {
   color: #03a0ce;
 }
