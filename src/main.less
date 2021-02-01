@@ -370,11 +370,15 @@
   div.property-box-asso,
   .cw-matrix-content,
   .cw-dashboard-container,
-  .cwLayoutTimeline {
+  .cwLayoutTimeline,
+  .page-content div.cwLayoutSearch div.search-zone,
+  .page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node {
     box-shadow: @shadow;
     border: solid 1px @cwColor1;
     border-radius: 0.25rem;
   }
+
+  //search
 
   //simple table
   table.cw-grid {
@@ -556,7 +560,8 @@ div.cwPropertiesTableContainer {
   }
 }
 // flatList
-.CwPropertiesLayoutFlatList {
+div.CwPropertiesLayoutFlatList,
+ul.CwPropertiesLayoutFlatList {
   background-color: white;
 }
 //memotext

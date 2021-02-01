@@ -302,7 +302,9 @@ table.cw-grid,
 div.property-box-asso,
 .cw-matrix-content,
 .cw-dashboard-container,
-.cwLayoutTimeline {
+.cwLayoutTimeline,
+.page-content div.cwLayoutSearch div.search-zone,
+.page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node {
   box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   border: solid 1px #03a0ce;
   border-radius: 0.25rem;
@@ -446,7 +448,8 @@ div.cwPropertiesTableContainer table.cwPropertiesTable tr:not(:last-child) th {
   border: none;
   border-bottom: 1px solid rgba(55, 131, 154, 0.1);
 }
-.CwPropertiesLayoutFlatList {
+div.CwPropertiesLayoutFlatList,
+ul.CwPropertiesLayoutFlatList {
   background-color: white;
 }
 .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText td:hover {
