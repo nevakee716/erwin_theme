@@ -63,7 +63,10 @@
         this.drawOneMethod(output, child);
       }
     }
+    output.push("</ul>");
 
-    output.push("</ul></div>");
+    if (this.options && this.options.CustomOptions && this.options.CustomOptions["display-title"] === true && associationTargetNode.length > 0) {
+      output.push("</div>");
+    }
   };
 })(cwAPI, jQuery);
