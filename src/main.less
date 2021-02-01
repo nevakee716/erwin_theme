@@ -1,6 +1,8 @@
 @import "../../_variables";
 @import "../../_mixins";
 
+@shadow: 0 8px 32px rgb(47 60 74 / 1%), 0 8px 16px rgb(47 60 74 / 2%);
+
 & when (@cwTopBarBackgroundColor = @cwColor1) {
   /* Masquer le bouton Print */
   a#cw_print_btn {
@@ -297,5 +299,308 @@
   li.cwTabLink.selected {
     border-right: solid 3px;
     border-right-color: @cwColor1;
+  }
+}
+
+& when (@cwBodyBackgroundColor = fade(desaturate(@cwColor1,50%),10%)) {
+  .homePage_display_content {
+    border: 1px solid fade(@cwColor1, 90%);
+    border-radius: 10px;
+    padding: 1.25rem;
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    box-shadow: @shadow;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    ul.cw-list {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  div.cwPropertiesTableHeader {
+    background-color: transparent;
+    border-bottom: 0px solid @cwColor1;
+  }
+
+  .tabContent {
+    background-color: white;
+  }
+
+  .CoffeeMaker div.propertieslist,
+  .bootstrap-iso {
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 1024px) {
+    body .main-nav {
+      position: fixed;
+      .sub-level {
+        position: fixed;
+        margin-top: 41px;
+      }
+    }
+  }
+
+  body #cw-top-bar {
+    .tb-profile-container .tb-username,
+    .tb-profile-container i {
+      color: white;
+    }
+    .tb-profile-container.show .tb-profile-popout {
+      background-color: white;
+      .user {
+        background-color: @cwBodyBackgroundColor;
+      }
+
+      table .logout td a {
+        color: white;
+      }
+    }
+  }
+
+  // display
+  .k-grid,
+  div.cwPropertiesTableContainer,
+  div.CwPropertiesLayoutHelpText,
+  ul.cw-diagram-zone li.cw-diagram-zone,
+  div.cw-accordion-container,
+  table.cw-grid,
+  div.property-box-asso,
+  .cw-matrix-content,
+  .empty {
+    box-shadow: @shadow;
+    border: solid 1px @cwColor1;
+    border-radius: 0.25rem;
+  }
+
+  //simple table
+  table.cw-grid {
+    padding-bottom: 0px;
+    margin-bottom: 0.5rem;
+    tr th {
+      color: white;
+    }
+    tr:hover {
+      background-color: @cwBodyBackgroundColor !important;
+    }
+    td {
+      border-left: none;
+    }
+  }
+  div.simpletable-title {
+    background-color: white;
+  }
+  //accordeon
+  div.cw-accordion-content {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+    .cw-accordion-header {
+      width: 100%;
+    }
+  }
+
+  //objectpage
+  .tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  body:not(.cw_print) .page-content-wrap .page-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  // popout
+  .view-region > div .property-box-asso,
+  .view-region > div .property-box,
+  .view-region > div .cwPropertiesTableContainer {
+    width: 100%;
+    min-width: 0px;
+  }
+
+  //list
+  .cwLayoutList {
+    padding-left: 0.25rem;
+    width: 100%;
+  }
+  //listbox
+  .property-box-asso {
+    div.cw-property-details-left {
+      padding-left: 1.5rem;
+    }
+    ul.property-details .property-value {
+      border: none;
+    }
+  }
+  div.property-box {
+    min-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+  // helptext
+  div.CwPropertiesLayoutHelpText {
+    background-color: white;
+    margin-bottom: 1.5rem;
+    &[id*="noicon"] {
+      .fa {
+        display: none;
+      }
+    }
+  }
+  // matrix
+  .cw-matrix-content {
+    margin-bottom: 1.5rem;
+  }
+  table.cw-matrix-advanced tr:hover th {
+    background-color: transparent !important;
+  }
+  .cw-matrix-col-header,
+  .cw-matrix-row-header {
+    background-color: transparent !important;
+    border: none !important;
+    color: @cwColor1!important;
+    border-bottom: solid 1px fade(@cwColor2, 40%) !important;
+
+    a div {
+      color: @cwColor1 !important;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  // diagram
+  ul.cw-diagram-zone li.cw-diagram-zone {
+    // background-color: @cwColor1;
+  }
+
+  .cwDiagramBreadcrumb ul.cwDiagramBreadcrumbZone li.cwDiagramBreadcrumbZoneRight a.btn {
+    &:hover {
+      i.fa {
+        color: white;
+      }
+    }
+
+    i.fa {
+      color: #03a0ce;
+    }
+  }
+
+  .cwDiagramBreadcrumb {
+    background-color: white;
+    border-bottom: 1px solid @cwColor1;
+  }
+
+  //chart
+  .k-stockchart,
+  div.k-chart,
+  div.k-gauge,
+  span.k-sparkline {
+    background-color: white;
+  }
+  .cw-dashboard-container {
+    margin-bottom: 0px;
+  }
+  //search
+  a.cw-searchengin-clear.btn i {
+    color: white;
+  }
+  //property table
+  div.cwPropertiesTableContainer {
+    padding-bottom: 0px;
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    max-width: 100%;
+    margin-right: 0px;
+    table.cwPropertiesTable {
+      border-collapse: unset;
+      tr {
+        td,
+        th {
+          border: none;
+        }
+      }
+      tr:not(:last-child) {
+        td,
+        th {
+          border: none;
+          border-bottom: 1px solid rgba(55, 131, 154, 0.1);
+        }
+      }
+    }
+  }
+
+  //memotext
+  .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText {
+    td:hover {
+      background-color: white;
+    }
+  }
+  //complexe table
+  div.k-header.k-grid-toolbar {
+    color: rgb(255, 255, 255);
+  }
+  .k-button {
+    border: none;
+    background-color: white;
+  }
+  .k-alt,
+  .k-grouping-header,
+  .k-grouping-row,
+  .k-grouping-row td,
+  td.k-group-cell {
+    background-color: white;
+  }
+  div.empty.k-grid {
+    width: 100%;
+    td {
+      border-style: solid;
+      border-width: 0 0 1px 0;
+    }
+    tr:hover {
+      background-color: @cwBodyBackgroundColor;
+    }
+  }
+
+  .k-grid-header th.k-header {
+    border-width: 0;
+  }
+  .k-primary {
+    color: #2e2e2e;
+  }
+  .k-grid-filter {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+  .k-pager-wrap {
+    background-color: white;
+    .k-state-selected {
+      background-color: white;
+      border-color: white;
+    }
+    .k-dropdown-wrap {
+      background-color: white !important;
+      border-color: white !important;
+      &.k-state-focused {
+        background-color: white !important;
+        border-color: white !important;
+        box-shadow: 0 0 0;
+      }
+    }
+
+    .k-link {
+      border-color: white;
+      &:hover {
+        border-color: white;
+
+        .k-icon {
+          color: @cwColor1;
+        }
+      }
+    }
   }
 }

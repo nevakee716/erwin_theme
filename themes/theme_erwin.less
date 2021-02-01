@@ -1,5 +1,30 @@
 ﻿// Theme Version : 2018.0.0
+// Breakpoints
+@breakpoint-large: 1024px;
+@breakpoint-medium: 640px;
+@breakpoint-small: 240px;
 
+@largeLimit: (@breakpoint-large - 1px);
+@mediumLimit: (@breakpoint-medium - 1px);
+
+@cwContentPath: "/Libs-Debug/";
+@cwImagesPath: "/Libs-Debug/images/";
+@cwFontsPath: "/Libs-Debug/fonts/";
+
+// Colours
+@error-color: #e53935;
+@shadow-color: #bdbdbd;
+@add-button-green-color: #76cf76;
+
+// Sizes
+@size-width-popout: 481px;
+@size-page-menu: 200px;
+@size-main-menu: 180px;
+@size-main-menu-collapsed: 40px;
+@size-menu-item-height: 40px;
+@navAndPageTop: 41px;
+@padding-page-top: 50px;
+@padding-page: 20px;
 /* CUSTOM VARIABLES */
 
 @mainColor: #03a0ce;
@@ -117,7 +142,7 @@
 @cwSocialRatingStarBackgroundAndBorder: #ffda20; //v4.03
 
 /* LIST BOX */
-@cwListBoxPropertyHeaderBackgroundColor: @cwBodyBackgroundColor;
+@cwListBoxPropertyHeaderBackgroundColor: transparent;
 @cwListBoxPropertyHeaderTextColor: @mainColor;
 @cwListBoxPropertyHeaderTextSize: @cwFontMenuTextSize;
 @cwListBoxPropertyHeaderPadding: @cwHeaderPadding;
@@ -154,13 +179,13 @@
 /* ACCORDIONS */
 @cwAccordionHeaderBackgroundColor: @mainColor;
 @cwAccordionHeaderTextColor: @white; //v4.03
-@cwAccordionHeaderHoverBackgroundColor: @lightGray;
+@cwAccordionHeaderHoverBackgroundColor: @cwBodyBackgroundColor;
 @cwAccordionHeaderHoverTextColor: @mainColor;
 
 /* DISCUSSIONS */
 @cwDiscussionsBackgroundColor: @mistGray;
 @cwDiscussionsTextColor: @cwFontTextColor;
-@cwDiscussionsBackgroundColorHover: @lightGray; //v4.03
+@cwDiscussionsBackgroundColorHover: @cwBodyBackgroundColor; //v4.03
 
 /* WORLD MAP */
 @cwJVectorMapCircleBackgroundColor: @mainColor;
