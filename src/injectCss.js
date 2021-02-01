@@ -15,9 +15,7 @@ let rule = "div.cw-property-details-right { width : calc(50% - 1.5rem);}";
 rule += "  div.property-box " + halfSize;
 rule += '  div.property-box[class*="full"] ' + fullSize;
 rule += "  div.cw-accordion-content div.property-box {width: calc(50% - 0.75rem);}";
-rule += '  div.cw-accordion-content div.property-box[class*="full"] {width: 100%;}' ;
-
-
+rule += '  div.cw-accordion-content div.property-box[class*="full"] {width: 100%;}';
 
 rule += '  ul.cw-accordion-header[class*="half"] ' + halfSize;
 rule += "  ul.cw-accordion-header " + fullSize;
@@ -32,5 +30,12 @@ rule += "  .cw-list-wrapper " + halfSize;
 
 // Load the rules and execute after the DOM loads
 window.onload = function () {
-  addCss(rule);
+  var a = setInterval(function () {
+    if (!document.body) return;
+    clearInterval(a);
+    if (window.getComputedStyle(document.body).backgroundColor != "rgb(255, 255, 255)") {
+      console.log("Enable Next Gen Style");
+      addCss(rule);
+    }
+  }, 1000);
 };
