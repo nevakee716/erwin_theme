@@ -387,7 +387,10 @@ body:not(.cw_print) .page-content-wrap .page-content {
 .view-region > div .property-box-asso,
 .view-region > div .property-box,
 .view-region > div .cwPropertiesTableContainer {
+  min-width: 0px;
   width: 100%;
+}
+.view-region div.property-box.property-box-asso {
   min-width: 0px;
 }
 .cwLayoutList {

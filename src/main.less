@@ -476,11 +476,16 @@
   }
 
   // popout
-  .view-region > div .property-box-asso,
-  .view-region > div .property-box,
-  .view-region > div .cwPropertiesTableContainer {
-    width: 100%;
-    min-width: 0px;
+  .view-region {
+    & > div .property-box-asso,
+    & > div .property-box,
+    & > div .cwPropertiesTableContainer {
+      min-width: 0px;
+      width: 100%;
+    }
+    div.property-box.property-box-asso {
+      min-width: 0px;
+    }
   }
 
   //list
