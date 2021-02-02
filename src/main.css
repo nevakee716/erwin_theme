@@ -260,6 +260,12 @@ li.cwTabLink.selected {
   padding: 0px;
   margin: 0px;
 }
+.homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox img {
+  border-radius: 50%;
+}
+.homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox .link {
+  border-top: 0px solid #03a0ce;
+}
 div.cwPropertiesTableHeader {
   background-color: transparent;
   border-bottom: 0px solid #03a0ce;
@@ -304,10 +310,32 @@ div.property-box-asso,
 .cw-dashboard-container,
 .cwLayoutTimeline,
 .page-content div.cwLayoutSearch div.search-zone,
-.page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node {
+.page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node,
+.cw-jvector-map,
+.cw-jvectormap-from-list .cwLayoutList,
+.cwLayoutNetwork,
+.cwPivotTable {
   box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   border: solid 1px #03a0ce;
   border-radius: 0.25rem;
+}
+.cwLayoutNetwork {
+  background-color: white;
+}
+.cwLayoutNetwork .cwLayoutNetworkOption {
+  right: 1rem;
+  top: 1rem;
+}
+.cwPivotTable {
+  background-color: white;
+  padding: 1.25rem;
+}
+.cw-jvector-map {
+  background-color: white;
+}
+.cw-jvectormap-from-list .cwLayoutList {
+  padding: 1.25rem;
+  background-color: white;
 }
 table.cw-grid {
   padding-bottom: 0px;

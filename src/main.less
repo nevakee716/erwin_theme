@@ -319,6 +319,15 @@
     }
   }
 
+  .homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox {
+    img {
+      border-radius: 50%;
+    }
+    .link {
+      border-top: 0px solid #03a0ce;
+    }
+  }
+
   div.cwPropertiesTableHeader {
     background-color: transparent;
     border-bottom: 0px solid @cwColor1;
@@ -372,14 +381,43 @@
   .cw-dashboard-container,
   .cwLayoutTimeline,
   .page-content div.cwLayoutSearch div.search-zone,
-  .page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node {
+  .page-content div.cwLayoutSearch div.result-container ul.search-zone-result li.search-result-node,
+  .cw-jvector-map,
+  .cw-jvectormap-from-list .cwLayoutList,
+  .cwLayoutNetwork,
+  .cwPivotTable {
     box-shadow: @shadow;
     border: solid 1px @cwColor1;
     border-radius: 0.25rem;
   }
 
   //search
+  // network
 
+  .cwLayoutNetwork {
+    .cwLayoutNetworkOption {
+      right: 1rem;
+      top: 1rem;
+    }
+
+    background-color: white;
+  }
+  //cwPivotTable
+  .cwPivotTable {
+    background-color: white;
+    padding: 1.25rem;
+  }
+  // vector map
+  .cw-jvector-map {
+    background-color: white;
+  }
+
+  .cw-jvectormap-from-list {
+    .cwLayoutList {
+      padding: 1.25rem;
+      background-color: white;
+    }
+  }
   //simple table
   table.cw-grid {
     padding-bottom: 0px;
@@ -571,7 +609,6 @@
     }
   }
   //complexe table
-
   div.empty.k-grid {
     width: 100%;
     td {
