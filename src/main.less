@@ -385,15 +385,20 @@
   .cw-jvector-map,
   .cw-jvectormap-from-list .cwLayoutList,
   .cwLayoutNetwork,
-  .cwPivotTable {
+  .cwPivotTable,
+  .cwLayoutCustomQuery-wrapper {
     box-shadow: @shadow;
     border: solid 1px @cwColor1;
     border-radius: 0.25rem;
   }
 
   //search
-  // network
+  // custom query
 
+  div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
+    background-color: white;
+  }
+  // network
   .cwLayoutNetwork {
     .cwLayoutNetworkOption {
       right: 1rem;
@@ -473,6 +478,7 @@
   body:not(.cw_print) .page-content-wrap .page-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 15px;
   }
 
   // popout

@@ -277,6 +277,13 @@ div.cwPropertiesTableHeader {
 .bootstrap-iso {
   background-color: transparent;
 }
+.homePage_last_modified_object table.cwPropertiesTable td td,
+table.cwPropertiesTable td,
+.homePage_last_modified_object table.cwPropertiesTable td th,
+table.cwPropertiesTable th {
+  border: 0px solid rgba(55, 131, 154, 0.1);
+  border-bottom: 1px solid rgba(55, 131, 154, 0.1);
+}
 @media screen and (min-width: 1024px) {
   body .main-nav {
     position: fixed;
@@ -314,10 +321,14 @@ div.property-box-asso,
 .cw-jvector-map,
 .cw-jvectormap-from-list .cwLayoutList,
 .cwLayoutNetwork,
-.cwPivotTable {
+.cwPivotTable,
+.cwLayoutCustomQuery-wrapper {
   box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   border: solid 1px #03a0ce;
   border-radius: 0.25rem;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
+  background-color: white;
 }
 .cwLayoutNetwork {
   background-color: white;
@@ -383,6 +394,7 @@ div.cw-accordion-content ul.property-details .property-title {
 body:not(.cw_print) .page-content-wrap .page-content {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-bottom: 15px;
 }
 .view-region > div .property-box-asso,
 .view-region > div .property-box,
