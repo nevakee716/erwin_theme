@@ -330,6 +330,22 @@ div.property-box-asso,
 div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
   background-color: white;
 }
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action {
+  box-shadow: none;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon {
+  background-color: transparent;
+  border: none;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon.icon-activated {
+  background-color: transparent;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon.icon-activated i {
+  color: #03a0ce;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon i {
+  color: #5c5d61;
+}
 .cwLayoutNetwork {
   background-color: white;
 }

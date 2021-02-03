@@ -406,7 +406,24 @@
 
   div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
     background-color: white;
+    .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action {
+      box-shadow: none;
+      &.icon {
+        &.icon-activated {
+          background-color: transparent;
+          i {
+            color: @cwColor1;
+          }
+        }
+        background-color: transparent;
+        border: none;
+        i {
+          color: @cwColor1Tint;
+        }
+      }
+    }
   }
+
   // network
   .cwLayoutNetwork {
     .cwLayoutNetworkOption {
