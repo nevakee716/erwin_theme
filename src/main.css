@@ -366,7 +366,7 @@ div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-hea
 }
 table.cw-grid {
   padding-bottom: 0px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 table.cw-grid tr th {
   color: white;
@@ -514,8 +514,26 @@ ul.CwPropertiesLayoutFlatList {
 .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText td:hover {
   background-color: white;
 }
+.wrap-kendo-mobile {
+  width: 100%;
+}
 div.empty.k-grid {
   width: 100%;
+}
+div.empty.k-grid div.property-box.property-box-asso {
+  min-width: 0px;
+  width: calc(100% - 1rem);
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+div.empty.k-grid .k-grid-content tr:hover ul.property-details .property-title {
+  background-color: white;
+}
+div.empty.k-grid tr.k-alt ul.property-details .property-title {
+  background-color: white;
+}
+div.empty.k-grid tr.k-alt div.property-box {
+  background-color: white;
 }
 div.empty.k-grid td {
   border-style: solid;

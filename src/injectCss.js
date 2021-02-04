@@ -27,7 +27,8 @@ rule += "  div.cw-accordion-content div.cw-accordion-header {width: calc(100% - 
 rule += "  div.cwPropertiesTableContainer {width: calc(50% - 3.25rem);}";
 rule += "  .cw-dashboard-container {width: calc(50% - 3.25rem); min-width: 600px;}";
 rule += "  .cw-list-wrapper " + halfSize;
-rule += ".cw-jvectormap-from-list .cwLayoutList  {width: calc(15% - 2.5rem);";
+rule += " .cw-jvectormap-from-list .cwLayoutList  {width: calc(15% - 2.5rem);";
+rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100 % - 1rem); }";
 
 // Load the rules and execute after the DOM loads
 window.onload = function () {
