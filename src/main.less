@@ -303,6 +303,27 @@
 }
 
 & when (@cwBodyBackgroundColor = fade(desaturate(@cwColor1,50%),10%)) {
+  /* Top Breadcrumb*/
+
+  #cw-smart-bc {
+    color: white;
+    a,
+    li .cw-bc-seperator {
+      color: white;
+    }
+  }
+  .cw-bc-dropdown-content a {
+    background-color: @cwColor1;
+  }
+  .cw-bc-dropdown-default span,
+  .cw-bc-dropdown-default span:hover {
+    color: white;
+  }
+
+  li.popout-title a {
+    color: #ffffff;
+  }
+
   .homePage_display_content {
     border: 1px solid fade(@cwColor1, 90%);
     border-radius: 10px;
@@ -397,7 +418,7 @@
   .cwPivotTable,
   .cwLayoutCustomQuery-wrapper {
     box-shadow: @shadow;
-    border: solid 1px @cwColor1;
+    border: solid 1px #e4e4e7;
     border-radius: 0.25rem;
   }
 
@@ -480,6 +501,9 @@
     ul.property-details .property-title {
       background-color: @cwBodyBackgroundColor;
     }
+    li.cw-accordion-container {
+      margin-right: 0px;
+    }
   }
 
   // timeline
@@ -527,6 +551,9 @@
   }
   //listbox
   .property-box-asso {
+    ul.property-details .property-value {
+      padding: 1.5rem;
+    }
     div.cw-property-details-left {
       padding-left: 1.5rem;
     }
@@ -536,7 +563,7 @@
   }
 
   div.property-box.property-box-asso {
-    min-width: 600px;
+    min-width: 20rem;
     margin-bottom: 1.5rem;
     max-width: 2010px;
   }
@@ -617,6 +644,7 @@
     padding: 1.25rem;
     max-width: 100%;
     margin-right: 0px;
+    min-width: 20rem;
     table.cwPropertiesTable {
       border-collapse: unset;
       tr {
