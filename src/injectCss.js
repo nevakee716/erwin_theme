@@ -34,6 +34,7 @@ rule += "  .cw-list-wrapper " + halfSize;
 
 rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15% - 2.5rem);}";
 rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100 % - 1rem); }";
+rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100 % - 1rem); }";
 
 rule += " .cw-gantt-roadmap-lifecycle { width: 100%; }";
 rule += " .cwRadarWrapper " + halfSize;
