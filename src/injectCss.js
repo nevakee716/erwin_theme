@@ -28,7 +28,7 @@ rule += '  div.CwPropertiesLayoutHelpText[id*="half"] ' + halfSize;
 rule += '  table.cw-grid[class*="half"] ' + halfSize;
 rule += "  div.cw-accordion-content div.cw-accordion-header {width: calc(100% - 16px);}";
 rule += "  div.cwPropertiesTableContainer {width: calc(50% - 0.75rem - 2.5rem);}";
-
+rule += " .cwLayoutTimelineExpertModeConfig div.cwPropertiesTableContainer {width: calc(100% - 2.5rem);}";
 rule += "  .cw-dashboard-container {width: calc(50% - 3.5rem); min-width: 600px;}";
 rule += "  .cw-list-wrapper " + halfSize;
 

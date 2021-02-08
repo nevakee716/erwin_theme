@@ -480,6 +480,12 @@ div.cw-accordion-content li.cw-accordion-container {
 .cwLayoutTimeline {
   background-color: white;
 }
+.tab-content .cwLayoutTimeline {
+  display: none;
+}
+.tab-content.visible .cwLayoutTimeline {
+  display: initial;
+}
 .cw-zone {
   display: flex;
   flex-wrap: wrap;
