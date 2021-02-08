@@ -306,6 +306,9 @@ table.cwPropertiesTable th {
   border-bottom: 1px solid rgba(55, 131, 154, 0.1);
 }
 @media screen and (min-width: 1024px) {
+  #nav-container {
+    margin-top: 41px;
+  }
   body .main-nav {
     position: fixed;
   }
@@ -412,6 +415,13 @@ div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-hea
 .cwLayoutNetwork .cwLayoutNetworkToolBox .btn.fa-files-o {
   background-color: transparent;
   color: #03a0ce;
+}
+div.cwLayoutTimelineButtons a.btn.page-action {
+  background-color: transparent;
+  color: #03a0ce;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
 }
 .cwPivotWrapper {
   background-color: white;
@@ -601,11 +611,18 @@ ul.CwPropertiesLayoutFlatList {
 div.empty.k-grid {
   width: 100%;
 }
+div.empty.k-grid div.empty.k-grid .k-grid-header th.k-header {
+  background-color: white;
+}
 div.empty.k-grid div.property-box.property-box-asso {
   min-width: 0px;
   width: calc(100% - 1rem);
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+}
+div.empty.k-grid .k-grid-header,
+div.empty.k-grid th.k-header {
+  background: white !important;
 }
 div.empty.k-grid .k-grid-content tr:hover ul.property-details .property-title {
   background-color: white;
