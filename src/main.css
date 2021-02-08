@@ -165,6 +165,9 @@ ul.cw-list {
 div.cwPropertiesTableContainer {
   padding-bottom: 30px;
 }
+.homePage_display_content .tableForPopoutWrapper .cw-grid {
+  max-width: 100%;
+}
 li.cw-accordion-container:hover div.cw-accordion-header {
   background-color: #03a0ce;
 }
@@ -339,29 +342,54 @@ div.property-box-asso,
 .cw-jvector-map,
 .cw-jvectormap-from-list .cwLayoutList,
 .cwLayoutNetwork,
-.cwPivotTable,
-.cwLayoutCustomQuery-wrapper {
+.cwPivotWrapper,
+.cwLayoutCustomQuery-wrapper,
+.cwTimelineTable,
+.cwLayoutCompare,
+.cwRadarWrapper,
+.cwLayoutGraph2D {
   box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   border: solid 1px #e4e4e7;
   border-radius: 0.25rem;
 }
+.cwRadarWrapper {
+  margin-bottom: 1.5rem;
+  background-color: white;
+}
+.cwRadarWrapper .cw-radar-chart {
+  width: 100%;
+}
+.cwRadarWrapper .cw-dashboard-container {
+  box-shadow: none;
+  border: solid 0px #e4e4e7;
+}
+.cwRadarWrapper .cwPropertiesTableHeader {
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+.cwLayoutGraph2D {
+  background-color: white;
+  padding: 1.5rem;
+}
 div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
   background-color: white;
 }
-div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action {
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action {
   box-shadow: none;
 }
-div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon {
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action.icon {
   background-color: transparent;
   border: none;
+  box-shadow: none;
+  font-size: 15px;
 }
-div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon.icon-activated {
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action.icon.icon-activated {
   background-color: transparent;
 }
-div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon.icon-activated i {
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action.icon.icon-activated i {
   color: #03a0ce;
 }
-div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action.icon i {
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action.icon i {
   color: #5c5d61;
 }
 .cwLayoutNetwork {
@@ -371,9 +399,34 @@ div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-hea
   right: 1rem;
   top: 1rem;
 }
-.cwPivotTable {
+.cwLayoutNetwork .cwLayoutNetworkToolBox .btn {
+  background-color: transparent;
+  color: #2e2e2e;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+.cwLayoutNetwork .cwLayoutNetworkToolBox .btn.selected,
+.cwLayoutNetwork .cwLayoutNetworkToolBox .btn.fa-arrows-alt,
+.cwLayoutNetwork .cwLayoutNetworkToolBox .btn.fa-download,
+.cwLayoutNetwork .cwLayoutNetworkToolBox .btn.fa-files-o {
+  background-color: transparent;
+  color: #03a0ce;
+}
+.cwPivotWrapper {
   background-color: white;
   padding: 1.25rem;
+}
+.cwPivotWrapper .cwPivotToolBoxButton .btn {
+  background-color: transparent;
+  color: #2e2e2e;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+.cwPivotWrapper .cwPivotToolBoxButton .btn.selected {
+  background-color: transparent;
+  color: #03a0ce;
 }
 .cw-jvector-map {
   background-color: white;
@@ -446,13 +499,16 @@ body:not(.cw_print) .page-content-wrap .page-content {
   padding-left: 0.25rem;
   width: 100%;
 }
-.property-box-asso ul.property-details .property-value {
+.property-box-asso ul.property-details .property-value,
+div.filteredListBox ul.property-details .property-value {
   padding: 1.5rem;
 }
-.property-box-asso div.cw-property-details-left {
+.property-box-asso div.cw-property-details-left,
+div.filteredListBox div.cw-property-details-left {
   padding-left: 1.5rem;
 }
-.property-box-asso ul.property-details .property-value {
+.property-box-asso ul.property-details .property-value,
+div.filteredListBox ul.property-details .property-value {
   border: none;
 }
 div.property-box.property-box-asso {

@@ -186,6 +186,10 @@
     padding-bottom: 30px;
   }
 
+  .homePage_display_content .tableForPopoutWrapper .cw-grid {
+    max-width: 100%;
+  }
+
   // Color Accordeon
   li.cw-accordion-container:hover {
     div.cw-accordion-header {
@@ -415,19 +419,45 @@
   .cw-jvector-map,
   .cw-jvectormap-from-list .cwLayoutList,
   .cwLayoutNetwork,
-  .cwPivotTable,
-  .cwLayoutCustomQuery-wrapper {
+  .cwPivotWrapper,
+  .cwLayoutCustomQuery-wrapper,
+  .cwTimelineTable,
+  .cwLayoutCompare,
+  .cwRadarWrapper,
+  .cwLayoutGraph2D {
     box-shadow: @shadow;
     border: solid 1px #e4e4e7;
     border-radius: 0.25rem;
   }
 
   //search
-  // custom query
+  // radar
+  .cwRadarWrapper {
+    margin-bottom: 1.5rem;
+    background-color: white;
+    .cw-radar-chart {
+      width: 100%;
+    }
+    .cw-dashboard-container {
+      box-shadow: none;
+      border: solid 0px #e4e4e7;
+    }
+    .cwPropertiesTableHeader {
+      margin-left: 1rem;
+      margin-top: 1.5rem;
+    }
+  }
 
+  //2d
+  .cwLayoutGraph2D {
+    background-color: white;
+    padding: 1.5rem;
+  }
+
+  // custom query
   div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
     background-color: white;
-    .cwLayoutCustomQuery-header_maybe .icons-container .btn.page-action {
+    .cwLayoutCustomQuery-header .icons-container .btn.page-action {
       box-shadow: none;
       &.icon {
         &.icon-activated {
@@ -438,6 +468,8 @@
         }
         background-color: transparent;
         border: none;
+        box-shadow: none;
+        font-size: 15px;
         i {
           color: @cwColor1Tint;
         }
@@ -451,13 +483,38 @@
       right: 1rem;
       top: 1rem;
     }
-
+    .cwLayoutNetworkToolBox .btn {
+      background-color: transparent;
+      color: #2e2e2e;
+      border: none;
+      box-shadow: none;
+      font-size: 15px;
+      &.selected,
+      &.fa-arrows-alt,
+      &.fa-download,
+      &.fa-files-o {
+        background-color: transparent;
+        color: @cwColor1;
+      }
+    }
     background-color: white;
   }
   //cwPivotTable
-  .cwPivotTable {
+  .cwPivotWrapper {
     background-color: white;
     padding: 1.25rem;
+
+    .cwPivotToolBoxButton .btn {
+      background-color: transparent;
+      color: #2e2e2e;
+      border: none;
+      box-shadow: none;
+      font-size: 15px;
+      &.selected {
+        background-color: transparent;
+        color: @cwColor1;
+      }
+    }
   }
   // vector map
   .cw-jvector-map {
@@ -550,7 +607,8 @@
     width: 100%;
   }
   //listbox
-  .property-box-asso {
+  .property-box-asso,
+  div.filteredListBox {
     ul.property-details .property-value {
       padding: 1.5rem;
     }
