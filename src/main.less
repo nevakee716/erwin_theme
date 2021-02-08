@@ -581,7 +581,6 @@
     background-color: white;
   }
   // indexpage
-
   .cw-zone {
     display: flex;
     flex-wrap: wrap;
@@ -750,12 +749,21 @@
   }
   div.empty.k-grid {
     width: 100%;
+    div.empty.k-grid .k-grid-header th.k-header {
+      background-color: white;
+    }
     div.property-box.property-box-asso {
       min-width: 0px;
       width: calc(100% - 1rem);
       margin-right: 0.5rem;
       margin-left: 0.5rem;
     }
+
+    .k-grid-header,
+    th.k-header {
+      background: white !important;
+    }
+
     .k-grid-content tr:hover ul.property-details .property-title {
       background-color: white;
     }
