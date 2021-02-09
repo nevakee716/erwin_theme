@@ -442,6 +442,7 @@ div.cwLayoutTimelineButtons a.btn.page-action {
   background-color: white;
 }
 .cw-jvectormap-from-list .cwLayoutList {
+  min-width: 0px;
   padding: 1.25rem;
   background-color: white;
 }
