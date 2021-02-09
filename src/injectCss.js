@@ -33,6 +33,7 @@ rule += "  .cw-dashboard-container {width: calc(50% - 3.5rem); min-width: 600px;
 rule += "  .cw-list-wrapper " + halfSize;
 
 rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15% - 2.5rem);}";
+rule += " .cw-jvectormap-from-list > .cwLayoutList { height: calc(100% - 2.5rem);}";
 rule += " .cw-jvectormap-from-list .cwLayoutList .cwLayoutList{  width: calc(100% - 2.5rem);}";
 rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100 % - 1rem); }";
 rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100 % - 1rem); }";

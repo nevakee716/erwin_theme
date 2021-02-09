@@ -446,6 +446,9 @@ div.cwLayoutTimelineButtons a.btn.page-action {
   padding: 1.25rem;
   background-color: white;
 }
+.cw-jvectormap-from-list > .cwLayoutList {
+  overflow-y: scroll;
+}
 table.cw-grid {
   padding-bottom: 0px;
   margin-bottom: 1.5rem;
