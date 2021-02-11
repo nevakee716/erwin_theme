@@ -267,15 +267,10 @@ li.popout-title a {
   color: #ffffff;
 }
 .homePage_display_content {
-  border: 1px solid rgba(3, 160, 206, 0.9);
-  border-radius: 10px;
   padding: 1.25rem;
   color: rgba(0, 0, 0, 0.87);
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.25rem;
 }
 .homePage_display_content ul.cw-list {
   padding: 0px;
@@ -350,10 +345,21 @@ div.property-box-asso,
 .cwTimelineTable,
 .cwLayoutCompare,
 .cwRadarWrapper,
-.cwLayoutGraph2D {
+.cwLayoutGraph2D,
+.cwLayoutTree,
+.nextGenCard {
   box-shadow: 0 8px 32px rgba(47, 60, 74, 0.01), 0 8px 16px rgba(47, 60, 74, 0.02);
   border: solid 1px #e4e4e7;
   border-radius: 0.25rem;
+}
+.nextGenCard {
+  background-color: white;
+}
+.nextGenCard .homePage_display_title {
+  padding-left: 0.5rem;
+}
+div[id*="cw-layout-emodeler-diagrams-content"] {
+  width: 100%;
 }
 .cwRadarWrapper {
   margin-bottom: 1.5rem;
@@ -374,8 +380,15 @@ div.property-box-asso,
   background-color: white;
   padding: 1.5rem;
 }
+.cwLayoutTree {
+  width: 100%;
+  background-color: white;
+}
 div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
   background-color: white;
+}
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-chart {
+  margin-bottom: 0px;
 }
 div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper .cwLayoutCustomQuery-header .icons-container .btn.page-action {
   box-shadow: none;
@@ -423,6 +436,9 @@ div.cwLayoutTimelineButtons a.btn.page-action {
   box-shadow: none;
   font-size: 15px;
 }
+.homePage_evolveView .cwPivotWrapper {
+  border: none;
+}
 .cwPivotWrapper {
   background-color: white;
   padding: 1.25rem;
@@ -463,6 +479,7 @@ table.cw-grid td {
   border-left: none;
 }
 div.simpletable-title {
+  width: 100%;
   background-color: white;
 }
 div.cw-accordion-content {

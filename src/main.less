@@ -329,15 +329,10 @@
   }
 
   .homePage_display_content {
-    border: 1px solid fade(@cwColor1, 90%);
-    border-radius: 10px;
     padding: 1.25rem;
     color: rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    box-shadow: @shadow;
     background-color: #fff;
-    background-clip: border-box;
-    border-radius: 0.25rem;
     ul.cw-list {
       padding: 0px;
       margin: 0px;
@@ -428,416 +423,441 @@
   .cwTimelineTable,
   .cwLayoutCompare,
   .cwRadarWrapper,
-  .cwLayoutGraph2D {
+  .cwLayoutGraph2D,
+  .cwLayoutTree,
+  .nextGenCard {
     box-shadow: @shadow;
     border: solid 1px #e4e4e7;
     border-radius: 0.25rem;
   }
-
-  //search
-  // radar
-  .cwRadarWrapper {
-    margin-bottom: 1.5rem;
+  .nextGenCard {
     background-color: white;
-    .cw-radar-chart {
-      width: 100%;
-    }
-    .cw-dashboard-container {
-      box-shadow: none;
-      border: solid 0px #e4e4e7;
-    }
-    .cwPropertiesTableHeader {
-      margin-left: 1rem;
-      margin-top: 1.5rem;
+    .homePage_display_title {
+      padding-left: 0.5rem;
     }
   }
 
-  //2d
-  .cwLayoutGraph2D {
-    background-color: white;
-    padding: 1.5rem;
+  //emodeler
+  div[id*="cw-layout-emodeler-diagrams-content"] {
+    width: 100%;
   }
+}
+//search
+// radar
+.cwRadarWrapper {
+  margin-bottom: 1.5rem;
+  background-color: white;
+  .cw-radar-chart {
+    width: 100%;
+  }
+  .cw-dashboard-container {
+    box-shadow: none;
+    border: solid 0px #e4e4e7;
+  }
+  .cwPropertiesTableHeader {
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+  }
+}
 
-  // custom query
-  div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
-    background-color: white;
-    .cwLayoutCustomQuery-header .icons-container .btn.page-action {
-      box-shadow: none;
-      &.icon {
-        &.icon-activated {
-          background-color: transparent;
-          i {
-            color: @cwColor1;
-          }
-        }
+//2d
+.cwLayoutGraph2D {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+// tree
+.cwLayoutTree {
+  width: 100%;
+  background-color: white;
+}
+// custom query
+div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
+  background-color: white;
+  .cwLayoutCustomQuery-chart {
+    margin-bottom: 0px;
+  }
+  .cwLayoutCustomQuery-header .icons-container .btn.page-action {
+    box-shadow: none;
+    &.icon {
+      &.icon-activated {
         background-color: transparent;
-        border: none;
-        box-shadow: none;
-        font-size: 15px;
         i {
-          color: @cwColor1Tint;
+          color: @cwColor1;
         }
       }
-    }
-  }
-
-  // network
-  .cwLayoutNetwork {
-    .cwLayoutNetworkOption {
-      right: 1rem;
-      top: 1rem;
-    }
-    .cwLayoutNetworkToolBox .btn {
       background-color: transparent;
-      color: #2e2e2e;
       border: none;
       box-shadow: none;
       font-size: 15px;
-      &.selected,
-      &.fa-arrows-alt,
-      &.fa-download,
-      &.fa-files-o {
-        background-color: transparent;
-        color: @cwColor1;
+      i {
+        color: @cwColor1Tint;
       }
     }
-    background-color: white;
   }
+}
 
-  // timeline
-  div.cwLayoutTimelineButtons a.btn.page-action {
+// network
+.cwLayoutNetwork {
+  .cwLayoutNetworkOption {
+    right: 1rem;
+    top: 1rem;
+  }
+  .cwLayoutNetworkToolBox .btn {
     background-color: transparent;
-    color: @cwColor1;
+    color: #2e2e2e;
     border: none;
     box-shadow: none;
     font-size: 15px;
-  }
-  //cwPivotTable
-  .cwPivotWrapper {
-    background-color: white;
-    padding: 1.25rem;
-
-    .cwPivotToolBoxButton .btn {
+    &.selected,
+    &.fa-arrows-alt,
+    &.fa-download,
+    &.fa-files-o {
       background-color: transparent;
-      color: #2e2e2e;
-      border: none;
-      box-shadow: none;
-      font-size: 15px;
-      &.selected {
-        background-color: transparent;
-        color: @cwColor1;
-      }
+      color: @cwColor1;
     }
   }
-  // vector map
-  .cw-jvector-map {
-    background-color: white;
-  }
+  background-color: white;
+}
 
-  .cw-jvectormap-from-list {
-    .cwLayoutList {
-      min-width: 0px;
-      padding: 1.25rem;
-      background-color: white;
-    }
-    & > .cwLayoutList {
-      overflow-y: scroll;
-    }
-  }
-  //simple table
-  table.cw-grid {
-    padding-bottom: 0px;
-    margin-bottom: 1.5rem;
-    tr th {
-      color: white;
-    }
-    tr:hover {
-      background-color: @cwBodyBackgroundColor !important;
-    }
-    td {
-      border-left: none;
-    }
-  }
-  div.simpletable-title {
-    background-color: white;
-  }
-  //accordeon
-  div.cw-accordion-content {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.5rem;
-    .cw-accordion-header {
-      width: 100%;
-    }
+// timeline
+div.cwLayoutTimelineButtons a.btn.page-action {
+  background-color: transparent;
+  color: @cwColor1;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+}
+//cwPivotTable
 
-    ul.property-details .property-title {
-      background-color: @cwBodyBackgroundColor;
-    }
-    li.cw-accordion-container {
-      margin-right: 0px;
-    }
-  }
+.homePage_evolveView .cwPivotWrapper {
+  border: none;
+}
+.cwPivotWrapper {
+  background-color: white;
+  padding: 1.25rem;
 
-  // timeline
-  .cwLayoutTimeline {
-    background-color: white;
-  }
-  .tab-content .cwLayoutTimeline {
-    display: none;
-  }
-  .tab-content.visible .cwLayoutTimeline {
-    display: initial;
-  }
-
-  // indexpage
-  .cw-zone {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  //objectpage,tab
-  .tab-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-  body:not(.cw_print) .page-content-wrap .page-content {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 15px;
-  }
-
-  // popout
-  .view-region {
-    & > div .property-box-asso,
-    & > div .property-box,
-    & > div .cwPropertiesTableContainer {
-      min-width: 0px;
-      width: 100%;
-    }
-    div.property-box.property-box-asso {
-      min-width: 0px;
+  .cwPivotToolBoxButton .btn {
+    background-color: transparent;
+    color: #2e2e2e;
+    border: none;
+    box-shadow: none;
+    font-size: 15px;
+    &.selected {
+      background-color: transparent;
+      color: @cwColor1;
     }
   }
+}
+// vector map
+.cw-jvector-map {
+  background-color: white;
+}
 
-  //list
+.cw-jvectormap-from-list {
   .cwLayoutList {
-    padding-left: 0.25rem;
-    width: 100%;
-  }
-  //listbox
-  .property-box-asso,
-  div.filteredListBox {
-    ul.property-details .property-value {
-      padding: 1.5rem;
-    }
-    div.cw-property-details-left {
-      padding-left: 1.5rem;
-    }
-    ul.property-details .property-value {
-      border: none;
-    }
-  }
-
-  div.property-box.property-box-asso {
-    min-width: 20rem;
-    margin-bottom: 1.5rem;
-    max-width: 2010px;
-  }
-
-  // helptext
-  div.CwPropertiesLayoutHelpText {
-    background-color: white;
-    margin-bottom: 1.5rem;
-    &[id*="noicon"] {
-      .fa {
-        display: none;
-      }
-    }
-  }
-  // matrix
-  .cw-matrix-content {
-    margin-bottom: 1.5rem;
-  }
-  table.cw-matrix-advanced tr:hover th {
-    background-color: transparent !important;
-  }
-  .cw-matrix-col-header,
-  .cw-matrix-row-header {
-    background-color: transparent !important;
-    border: none !important;
-    color: @cwColor1!important;
-    border-bottom: solid 1px fade(@cwColor2, 40%) !important;
-
-    a div {
-      color: @cwColor1 !important;
-      &::before,
-      &::after {
-        display: none;
-      }
-    }
-  }
-
-  // diagram
-  ul.cw-diagram-zone li.cw-diagram-zone {
-    // background-color: @cwColor1;
-  }
-
-  .cwDiagramBreadcrumb ul.cwDiagramBreadcrumbZone li.cwDiagramBreadcrumbZoneRight a.btn {
-    &:hover {
-      i.fa {
-        color: white;
-      }
-    }
-
-    i.fa {
-      color: #03a0ce;
-    }
-  }
-
-  .cwDiagramBreadcrumb {
-    background-color: white;
-    border-bottom: 1px solid @cwColor1;
-  }
-
-  //chart
-  .k-stockchart,
-  div.k-chart,
-  div.k-gauge,
-  span.k-sparkline {
+    min-width: 0px;
+    padding: 1.25rem;
     background-color: white;
   }
-  .cw-dashboard-container {
-    margin-bottom: 0px;
+  & > .cwLayoutList {
+    overflow-y: scroll;
   }
-  //search
-  a.cw-searchengin-clear.btn i {
+}
+//simple table
+table.cw-grid {
+  padding-bottom: 0px;
+  margin-bottom: 1.5rem;
+  tr th {
     color: white;
   }
-  //property table
-  div.cwPropertiesTableContainer {
-    padding-bottom: 0px;
-    margin-bottom: 1.5rem;
-    padding: 1.25rem;
-    max-width: 100%;
+  tr:hover {
+    background-color: @cwBodyBackgroundColor !important;
+  }
+  td {
+    border-left: none;
+  }
+}
+div.simpletable-title {
+  width: 100%;
+  background-color: white;
+}
+//accordeon
+div.cw-accordion-content {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+  .cw-accordion-header {
+    width: 100%;
+  }
+
+  ul.property-details .property-title {
+    background-color: @cwBodyBackgroundColor;
+  }
+  li.cw-accordion-container {
     margin-right: 0px;
-    min-width: 20rem;
-    table.cwPropertiesTable {
-      border-collapse: unset;
-      tr {
-        td,
-        th {
-          border: none;
-        }
+  }
+}
+
+// timeline
+.cwLayoutTimeline {
+  background-color: white;
+}
+.tab-content .cwLayoutTimeline {
+  display: none;
+}
+.tab-content.visible .cwLayoutTimeline {
+  display: initial;
+}
+
+// indexpage
+.cw-zone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+//objectpage,tab
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+body:not(.cw_print) .page-content-wrap .page-content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 15px;
+}
+
+// popout
+.view-region {
+  & > div .property-box-asso,
+  & > div .property-box,
+  & > div .cwPropertiesTableContainer {
+    min-width: 0px;
+    width: 100%;
+  }
+  div.property-box.property-box-asso {
+    min-width: 0px;
+  }
+}
+
+//list
+.cwLayoutList {
+  padding-left: 0.25rem;
+  width: 100%;
+}
+//listbox
+.property-box-asso,
+div.filteredListBox {
+  ul.property-details .property-value {
+    padding: 1.5rem;
+  }
+  div.cw-property-details-left {
+    padding-left: 1.5rem;
+  }
+  ul.property-details .property-value {
+    border: none;
+  }
+}
+
+div.property-box.property-box-asso {
+  min-width: 20rem;
+  margin-bottom: 1.5rem;
+  max-width: 2010px;
+}
+
+// helptext
+div.CwPropertiesLayoutHelpText {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  &[id*="noicon"] {
+    .fa {
+      display: none;
+    }
+  }
+}
+// matrix
+.cw-matrix-content {
+  margin-bottom: 1.5rem;
+}
+table.cw-matrix-advanced tr:hover th {
+  background-color: transparent !important;
+}
+.cw-matrix-col-header,
+.cw-matrix-row-header {
+  background-color: transparent !important;
+  border: none !important;
+  color: @cwColor1!important;
+  border-bottom: solid 1px fade(@cwColor2, 40%) !important;
+
+  a div {
+    color: @cwColor1 !important;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// diagram
+ul.cw-diagram-zone li.cw-diagram-zone {
+  // background-color: @cwColor1;
+}
+
+.cwDiagramBreadcrumb ul.cwDiagramBreadcrumbZone li.cwDiagramBreadcrumbZoneRight a.btn {
+  &:hover {
+    i.fa {
+      color: white;
+    }
+  }
+
+  i.fa {
+    color: #03a0ce;
+  }
+}
+
+.cwDiagramBreadcrumb {
+  background-color: white;
+  border-bottom: 1px solid @cwColor1;
+}
+
+//chart
+.k-stockchart,
+div.k-chart,
+div.k-gauge,
+span.k-sparkline {
+  background-color: white;
+}
+.cw-dashboard-container {
+  margin-bottom: 0px;
+}
+//search
+a.cw-searchengin-clear.btn i {
+  color: white;
+}
+//property table
+div.cwPropertiesTableContainer {
+  padding-bottom: 0px;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  max-width: 100%;
+  margin-right: 0px;
+  min-width: 20rem;
+  table.cwPropertiesTable {
+    border-collapse: unset;
+    tr {
+      td,
+      th {
+        border: none;
       }
-      tr:not(:last-child) {
-        td,
-        th {
-          border: none;
-          border-bottom: 1px solid rgba(55, 131, 154, 0.1);
-        }
+    }
+    tr:not(:last-child) {
+      td,
+      th {
+        border: none;
+        border-bottom: 1px solid rgba(55, 131, 154, 0.1);
       }
     }
   }
-  // flatList
-  div.CwPropertiesLayoutFlatList,
-  ul.CwPropertiesLayoutFlatList {
+}
+// flatList
+div.CwPropertiesLayoutFlatList,
+ul.CwPropertiesLayoutFlatList {
+  background-color: white;
+}
+//memotext
+.cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText {
+  td:hover {
     background-color: white;
   }
-  //memotext
-  .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText {
-    td:hover {
-      background-color: white;
-    }
+}
+//complexe table
+.wrap-kendo-mobile {
+  width: 100%;
+}
+div.empty.k-grid {
+  width: 100%;
+  div.empty.k-grid .k-grid-header th.k-header {
+    background-color: white;
   }
-  //complexe table
-  .wrap-kendo-mobile {
-    width: 100%;
+  div.property-box.property-box-asso {
+    min-width: 0px;
+    width: calc(100% - 1rem);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
-  div.empty.k-grid {
-    width: 100%;
-    div.empty.k-grid .k-grid-header th.k-header {
-      background-color: white;
-    }
-    div.property-box.property-box-asso {
-      min-width: 0px;
-      width: calc(100% - 1rem);
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
-    }
 
-    .k-grid-header,
-    th.k-header {
-      background: white !important;
-    }
+  .k-grid-header,
+  th.k-header {
+    background: white !important;
+  }
 
-    .k-grid-content tr:hover ul.property-details .property-title {
+  .k-grid-content tr:hover ul.property-details .property-title {
+    background-color: white;
+  }
+  tr.k-alt ul.property-details .property-title {
+    background-color: white;
+  }
+  tr.k-alt div.property-box {
+    background-color: white;
+  }
+  td {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+  }
+  tr:hover {
+    background-color: @cwBodyBackgroundColor;
+  }
+  div.k-header.k-grid-toolbar {
+    color: rgb(255, 255, 255);
+  }
+  .k-button {
+    border: none;
+    background-color: white;
+  }
+  .k-alt,
+  .k-grouping-header,
+  .k-grouping-row,
+  .k-grouping-row td,
+  td.k-group-cell {
+    background-color: white;
+  }
+  .k-grid-header th.k-header {
+    border-width: 0;
+  }
+  .k-primary {
+    color: #2e2e2e;
+  }
+  .k-grid-filter {
+    outline: -webkit-focus-ring-color auto 0px;
+  }
+  .k-pager-wrap {
+    background-color: white;
+    .k-state-selected {
       background-color: white;
+      border-color: white;
     }
-    tr.k-alt ul.property-details .property-title {
-      background-color: white;
-    }
-    tr.k-alt div.property-box {
-      background-color: white;
-    }
-    td {
-      border-style: solid;
-      border-width: 0 0 1px 0;
-    }
-    tr:hover {
-      background-color: @cwBodyBackgroundColor;
-    }
-    div.k-header.k-grid-toolbar {
-      color: rgb(255, 255, 255);
-    }
-    .k-button {
-      border: none;
-      background-color: white;
-    }
-    .k-alt,
-    .k-grouping-header,
-    .k-grouping-row,
-    .k-grouping-row td,
-    td.k-group-cell {
-      background-color: white;
-    }
-    .k-grid-header th.k-header {
-      border-width: 0;
-    }
-    .k-primary {
-      color: #2e2e2e;
-    }
-    .k-grid-filter {
-      outline: -webkit-focus-ring-color auto 0px;
-    }
-    .k-pager-wrap {
-      background-color: white;
-      .k-state-selected {
-        background-color: white;
-        border-color: white;
-      }
-      .k-dropdown-wrap {
+    .k-dropdown-wrap {
+      background-color: white !important;
+      border-color: white !important;
+      &.k-state-focused {
         background-color: white !important;
         border-color: white !important;
-        &.k-state-focused {
-          background-color: white !important;
-          border-color: white !important;
-          box-shadow: 0 0 0;
-        }
+        box-shadow: 0 0 0;
       }
+    }
 
-      .k-link {
+    .k-link {
+      border-color: white;
+      &:hover {
         border-color: white;
-        &:hover {
-          border-color: white;
 
-          .k-icon {
-            color: @cwColor1;
-          }
+        .k-icon {
+          color: @cwColor1;
         }
       }
     }
