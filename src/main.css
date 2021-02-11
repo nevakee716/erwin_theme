@@ -43,6 +43,10 @@ ul.property-details .property-title {
 ul.property-details .property-title .cw-property-details-right .btn:hover .fa {
   color: #ffffff;
 }
+/* Home page*/
+.homePage_main .homePage_column .homePage_display {
+  border: none;
+}
 /* Profile button */
 ul.popout-top-container .btn .fa {
   color: #ffffff;
@@ -361,6 +365,10 @@ div.property-box-asso,
 }
 div[id*="cw-layout-emodeler-diagrams-content"] {
   width: 100%;
+}
+.cwDiagramExplosionMultipleChoice li:hover {
+  background-color: rgba(22, 22, 22, 0.1);
+  color: white;
 }
 .cwRadarWrapper {
   margin-bottom: 1.5rem;
