@@ -511,7 +511,7 @@
   //2d
   .cwLayoutGraph2D {
     background-color: white;
-    padding: 1.5rem;
+    padding: 0.75rem;
   }
 
   // tree
@@ -633,7 +633,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 0.75rem;
     .cw-accordion-header {
       width: 100%;
     }
@@ -699,7 +699,7 @@
   .property-box-asso,
   div.filteredListBox {
     ul.property-details .property-value {
-      padding: 1.5rem;
+      padding: 0.75rem;
     }
     div.cw-property-details-left {
       padding-left: 1.5rem;
@@ -726,8 +726,12 @@
     }
   }
   // matrix
-  .cw-matrix-content {
-    margin: 0.75rem;
+  .empty.cw-list {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    .cw-matrix-content table.cw-grid {
+      margin: 0px;
+    }
   }
   table.cw-matrix-advanced tr:hover th {
     background-color: transparent !important;
@@ -820,6 +824,11 @@
     }
   }
   //complexe table
+  .wrap-kendo-mobile {
+    .empty.cw-list {
+      margin: 0rem;
+    }
+  }
 
   div.empty.k-grid {
     width: 100%;

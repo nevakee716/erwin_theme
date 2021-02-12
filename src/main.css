@@ -420,7 +420,7 @@ div.property-box {
 }
 .cwLayoutGraph2D {
   background-color: white;
-  padding: 1.5rem;
+  padding: 0.75rem;
 }
 .cwLayoutTree {
   background-color: white;
@@ -528,7 +528,7 @@ div.cw-accordion-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 0.75rem;
 }
 div.cw-accordion-content .cw-accordion-header {
   width: 100%;
@@ -579,7 +579,7 @@ body:not(.cw_print) .page-content-wrap .page-content {
 }
 .property-box-asso ul.property-details .property-value,
 div.filteredListBox ul.property-details .property-value {
-  padding: 1.5rem;
+  padding: 0.75rem;
 }
 .property-box-asso div.cw-property-details-left,
 div.filteredListBox div.cw-property-details-left {
@@ -601,8 +601,12 @@ div.CwPropertiesLayoutHelpText {
 div.CwPropertiesLayoutHelpText[id*="noicon"] .fa {
   display: none;
 }
-.cw-matrix-content {
-  margin: 0.75rem;
+.empty.cw-list {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.empty.cw-list .cw-matrix-content table.cw-grid {
+  margin: 0px;
 }
 table.cw-matrix-advanced tr:hover th {
   background-color: transparent !important;
@@ -671,6 +675,9 @@ ul.CwPropertiesLayoutFlatList {
 }
 .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText td:hover {
   background-color: white;
+}
+.wrap-kendo-mobile .empty.cw-list {
+  margin: 0rem;
 }
 div.empty.k-grid {
   width: 100%;
