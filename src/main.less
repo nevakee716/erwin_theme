@@ -435,7 +435,6 @@
   .cwPivotWrapper,
   .cwLayoutCustomQuery-wrapper,
   .cwTimelineTable,
-  .cwLayoutCompare,
   .cwRadarWrapper,
   .cwLayoutGraph2D,
   .cwLayoutTree,
@@ -452,7 +451,7 @@
     }
   }
 
-  //flex behaviour full
+  //flex behaviour full see injectCss
   div[id*="cw-layout-emodeler-diagrams-content"],
   .cwLayoutGraph2D,
   .cwLayoutTree,
@@ -469,6 +468,7 @@
   .cw-gantt-roadmap-lifecycle,
   .wrap-kendo-mobile {
     width: 100%;
+    flex: 0 1 auto;
     margin: 0.75rem;
   }
 
@@ -636,6 +636,7 @@
     padding: 0.75rem;
     .cw-accordion-header {
       width: 100%;
+      margin: 0rem;
     }
 
     ul.property-details .property-title {

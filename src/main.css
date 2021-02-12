@@ -353,7 +353,6 @@ div.property-box-asso,
 .cwPivotWrapper,
 .cwLayoutCustomQuery-wrapper,
 .cwTimelineTable,
-.cwLayoutCompare,
 .cwRadarWrapper,
 .cwLayoutGraph2D,
 .cwLayoutTree,
@@ -385,6 +384,7 @@ div.property-box[class*="full"],
 .cw-gantt-roadmap-lifecycle,
 .wrap-kendo-mobile {
   width: 100%;
+  flex: 0 1 auto;
   margin: 0.75rem;
 }
 .cwRadarWrapper,
@@ -532,6 +532,7 @@ div.cw-accordion-content {
 }
 div.cw-accordion-content .cw-accordion-header {
   width: 100%;
+  margin: 0rem;
 }
 div.cw-accordion-content ul.property-details .property-title {
   background-color: rgba(55, 131, 154, 0.1);
