@@ -47,6 +47,10 @@ ul.property-details .property-title .cw-property-details-right .btn:hover .fa {
 .homePage_main .homePage_column .homePage_display {
   border: none;
 }
+div.homePage_display_content .cwPivotWrapper,
+div.homePage_display_content div.cwLayoutCustomQuery {
+  margin: 0px;
+}
 /* Profile button */
 ul.popout-top-container .btn .fa {
   color: #ffffff;
@@ -277,8 +281,10 @@ li.popout-title a {
   background-color: #fff;
 }
 .homePage_display_content ul.cw-list {
-  padding: 0px;
   margin: 0px;
+}
+.homePage_main .homePage_column .homePage_display .homePage_evolveView > ul.cw-list {
+  padding: 0px;
 }
 .homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox img {
   border-radius: 50%;
@@ -363,15 +369,42 @@ div.property-box-asso,
 .nextGenCard .homePage_display_title {
   padding-left: 0.5rem;
 }
-div[id*="cw-layout-emodeler-diagrams-content"] {
+div[id*="cw-layout-emodeler-diagrams-content"],
+.cwLayoutGraph2D,
+.cwLayoutTree,
+div.cwLayoutCustomQuery,
+.cwLayoutNetwork,
+.cwPivotWrapper,
+table.cw-grid,
+div.cwLayoutGraph2D,
+div.layoutSearch,
+div.layoutSearchDocumentCustom,
+ul.cw-accordion-header,
+div.property-box[class*="full"],
+.property-box-asso ul.cw-accordion-header,
+.cw-gantt-roadmap-lifecycle,
+.wrap-kendo-mobile {
   width: 100%;
+  margin: 0.75rem;
+}
+.cwRadarWrapper,
+table.cw-grid[class*="half"],
+div.CwPropertiesLayoutHelpText[id*="half"],
+div.cwLayoutGraph2D[id*="half"],
+ul.cw-accordion-header[class*="half"],
+div.cwPropertiesTableContainer,
+.cw-dashboard-container,
+.cw-list-wrapper,
+div.property-box {
+  width: 30rem;
+  flex: 1 0 auto;
+  margin: 0.75rem;
 }
 .cwDiagramExplosionMultipleChoice li:hover {
   background-color: rgba(22, 22, 22, 0.1);
   color: white;
 }
 .cwRadarWrapper {
-  margin-bottom: 1.5rem;
   background-color: white;
 }
 .cwRadarWrapper .cw-radar-chart {
@@ -390,7 +423,6 @@ div[id*="cw-layout-emodeler-diagrams-content"] {
   padding: 1.5rem;
 }
 .cwLayoutTree {
-  width: 100%;
   background-color: white;
 }
 div.cwLayoutCustomQuery div.cwLayoutCustomQuery-wrapper {
@@ -476,7 +508,6 @@ div.cwLayoutTimelineButtons a.btn.page-action {
 }
 table.cw-grid {
   padding-bottom: 0px;
-  margin-bottom: 1.5rem;
 }
 table.cw-grid tr th {
   color: white;
@@ -489,6 +520,7 @@ table.cw-grid td {
 }
 div.simpletable-title {
   width: 100%;
+  margin: 0.75rem;
   background-color: white;
 }
 div.cw-accordion-content {
@@ -559,18 +591,18 @@ div.filteredListBox ul.property-details .property-value {
 }
 div.property-box.property-box-asso {
   min-width: 20rem;
-  margin-bottom: 1.5rem;
+  margin: 0.75rem;
   max-width: 2010px;
 }
 div.CwPropertiesLayoutHelpText {
   background-color: white;
-  margin-bottom: 1.5rem;
+  margin: 0.75rem;
 }
 div.CwPropertiesLayoutHelpText[id*="noicon"] .fa {
   display: none;
 }
 .cw-matrix-content {
-  margin-bottom: 1.5rem;
+  margin: 0.75rem;
 }
 table.cw-matrix-advanced tr:hover th {
   background-color: transparent !important;
@@ -616,10 +648,9 @@ a.cw-searchengin-clear.btn i {
 }
 div.cwPropertiesTableContainer {
   padding-bottom: 0px;
-  margin-bottom: 1.5rem;
+  margin: 0.75rem;
   padding: 1.25rem;
   max-width: 100%;
-  margin-right: 0px;
   min-width: 20rem;
 }
 div.cwPropertiesTableContainer table.cwPropertiesTable {
@@ -641,9 +672,6 @@ ul.CwPropertiesLayoutFlatList {
 .cwPropertiesTableContainer.cw-visible.CwPropertiesLayoutMultilineText td:hover {
   background-color: white;
 }
-.wrap-kendo-mobile {
-  width: 100%;
-}
 div.empty.k-grid {
   width: 100%;
 }
@@ -652,7 +680,6 @@ div.empty.k-grid div.empty.k-grid .k-grid-header th.k-header {
 }
 div.empty.k-grid div.property-box.property-box-asso {
   min-width: 0px;
-  width: calc(100% - 1rem);
   margin-right: 0.5rem;
   margin-left: 0.5rem;
 }

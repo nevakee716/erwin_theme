@@ -33,6 +33,13 @@
   .homePage_main .homePage_column .homePage_display {
     border: none;
   }
+
+  div.homePage_display_content {
+    .cwPivotWrapper,
+    div.cwLayoutCustomQuery {
+      margin: 0px;
+    }
+  }
   /* Profile button */
   ul.popout-top-container {
     .btn .fa {
@@ -338,9 +345,12 @@
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     background-color: #fff;
     ul.cw-list {
-      padding: 0px;
       margin: 0px;
     }
+  }
+
+  .homePage_main .homePage_column .homePage_display .homePage_evolveView > ul.cw-list {
+    padding: 0px;
   }
 
   .homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox {
@@ -442,9 +452,39 @@
     }
   }
 
-  //emodeler
-  div[id*="cw-layout-emodeler-diagrams-content"] {
+  //flex behaviour full
+  div[id*="cw-layout-emodeler-diagrams-content"],
+  .cwLayoutGraph2D,
+  .cwLayoutTree,
+  div.cwLayoutCustomQuery,
+  .cwLayoutNetwork,
+  .cwPivotWrapper,
+  table.cw-grid,
+  div.cwLayoutGraph2D,
+  div.layoutSearch,
+  div.layoutSearchDocumentCustom,
+  ul.cw-accordion-header,
+  div.property-box[class*="full"],
+  .property-box-asso ul.cw-accordion-header,
+  .cw-gantt-roadmap-lifecycle,
+  .wrap-kendo-mobile {
     width: 100%;
+    margin: 0.75rem;
+  }
+
+  //flex behaviour half
+  .cwRadarWrapper,
+  table.cw-grid[class*="half"],
+  div.CwPropertiesLayoutHelpText[id*="half"],
+  div.cwLayoutGraph2D[id*="half"],
+  ul.cw-accordion-header[class*="half"],
+  div.cwPropertiesTableContainer,
+  .cw-dashboard-container,
+  .cw-list-wrapper,
+  div.property-box {
+    width: 30rem;
+    flex: 1 0 auto;
+    margin: 0.75rem;
   }
 
   //multipopout
@@ -454,7 +494,6 @@
   }
   // radar
   .cwRadarWrapper {
-    margin-bottom: 1.5rem;
     background-color: white;
     .cw-radar-chart {
       width: 100%;
@@ -477,7 +516,6 @@
 
   // tree
   .cwLayoutTree {
-    width: 100%;
     background-color: white;
   }
   // custom query
@@ -537,8 +575,6 @@
     box-shadow: none;
     font-size: 15px;
   }
-  //cwPivotTable
-
   .homePage_evolveView .cwPivotWrapper {
     border: none;
   }
@@ -576,7 +612,6 @@
   //simple table
   table.cw-grid {
     padding-bottom: 0px;
-    margin-bottom: 1.5rem;
     tr th {
       color: white;
     }
@@ -589,6 +624,7 @@
   }
   div.simpletable-title {
     width: 100%;
+    margin: 0.75rem;
     background-color: white;
   }
   //accordeon
@@ -675,14 +711,14 @@
 
   div.property-box.property-box-asso {
     min-width: 20rem;
-    margin-bottom: 1.5rem;
+    margin: 0.75rem;
     max-width: 2010px;
   }
 
   // helptext
   div.CwPropertiesLayoutHelpText {
     background-color: white;
-    margin-bottom: 1.5rem;
+    margin: 0.75rem;
     &[id*="noicon"] {
       .fa {
         display: none;
@@ -691,7 +727,7 @@
   }
   // matrix
   .cw-matrix-content {
-    margin-bottom: 1.5rem;
+    margin: 0.75rem;
   }
   table.cw-matrix-advanced tr:hover th {
     background-color: transparent !important;
@@ -751,10 +787,9 @@
   //property table
   div.cwPropertiesTableContainer {
     padding-bottom: 0px;
-    margin-bottom: 1.5rem;
+    margin: 0.75rem;
     padding: 1.25rem;
     max-width: 100%;
-    margin-right: 0px;
     min-width: 20rem;
     table.cwPropertiesTable {
       border-collapse: unset;
@@ -785,17 +820,15 @@
     }
   }
   //complexe table
-  .wrap-kendo-mobile {
-    width: 100%;
-  }
+
   div.empty.k-grid {
     width: 100%;
+
     div.empty.k-grid .k-grid-header th.k-header {
       background-color: white;
     }
     div.property-box.property-box-asso {
       min-width: 0px;
-      width: calc(100% - 1rem);
       margin-right: 0.5rem;
       margin-left: 0.5rem;
     }
