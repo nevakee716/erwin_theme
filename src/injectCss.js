@@ -14,7 +14,7 @@ let fullSize = "{ width : calc(100% - 0.75rem); min-width: 600px;}";
 let rule = "div.cw-property-details-right { width : calc(50% - 1.5rem);}";
 rule += " div.filteredListBox div.cw-property-details-right { width : calc(50% - 1.5rem);}";
 
-rule += " .property-box-asso ul.cw-accordion-header {width: calc(100 % - 1.25rem);}";
+rule += " .property-box-asso ul.cw-accordion-header {width: calc(100% - 1.25rem);}";
 rule += "  div.cw-accordion-content div.cw-accordion-header {width: calc(100% - 16px);}";
 rule += " .cwLayoutTimelineExpertModeConfig div.cwPropertiesTableContainer {width: calc(100% - 2.5rem);}";
 
