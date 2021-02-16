@@ -23,9 +23,11 @@ rule += " .homePage_display_content .tableForPopoutWrapper {width: calc(100% - 1
 rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15%);}";
 rule += " .cw-jvectormap-from-list > .cwLayoutList { height: calc(100%);}";
 rule += " .cw-jvectormap-from-list .cwLayoutList .cwLayoutList{  width: calc(100% - 0.75rem);}";
-rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100 % - 1rem); }";
-rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100 % - 1rem); }";
+rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100% - 1rem); }";
+rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
 rule += " div.empty.k-grid div.property-box.property-box-asso {width: calc(100% - 1rem);}";
+rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
+rule += " div.wrap-kendo-mobile { width: calc(100% - 1.5rem); }";
 
 // Load the rules and execute after the DOM loads
 window.onload = function () {
