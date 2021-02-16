@@ -36,7 +36,8 @@
 
   div.homePage_display_content {
     .cwPivotWrapper,
-    div.cwLayoutCustomQuery {
+    div.cwLayoutCustomQuery,
+    .tableForPopoutWrapper {
       margin: 0px;
     }
   }
@@ -422,7 +423,6 @@
   div.CwPropertiesLayoutHelpText,
   ul.cw-diagram-zone li.cw-diagram-zone,
   div.cw-accordion-container,
-  table.cw-grid,
   div.property-box-asso,
   .cw-matrix-content,
   .cw-dashboard-container,
@@ -438,7 +438,9 @@
   .cwRadarWrapper,
   .cwLayoutGraph2D,
   .cwLayoutTree,
-  .nextGenCard {
+  .nextGenCard,
+  .cwWorkflow,
+  .tableForPopoutWrapper {
     box-shadow: @shadow;
     border: solid 1px #e4e4e7;
     border-radius: 0.25rem;
@@ -458,7 +460,7 @@
   div.cwLayoutCustomQuery,
   .cwLayoutNetwork,
   .cwPivotWrapper,
-  table.cw-grid,
+  .tableForPopoutWrapper,
   div.cwLayoutGraph2D,
   div.layoutSearch,
   div.layoutSearchDocumentCustom,
@@ -466,7 +468,9 @@
   div.property-box[class*="full"],
   .property-box-asso ul.cw-accordion-header,
   .cw-gantt-roadmap-lifecycle,
-  .wrap-kendo-mobile {
+  .wrap-kendo-mobile,
+  .cwWorkflow,
+  .cwLayoutConfigEditor {
     width: 100%;
     flex: 0 1 auto;
     margin: 0.75rem;
@@ -474,7 +478,7 @@
 
   //flex behaviour half
   .cwRadarWrapper,
-  table.cw-grid[class*="half"],
+  .tableForPopoutWrapper[class*="half"],
   div.CwPropertiesLayoutHelpText[id*="half"],
   div.cwLayoutGraph2D[id*="half"],
   ul.cw-accordion-header[class*="half"],
@@ -486,11 +490,44 @@
     flex: 1 0 auto;
     margin: 0.75rem;
   }
+  //flex behaviour half in popout
+  .cw-diagram-popout-container #popout-content-container {
+    .cwRadarWrapper,
+    table.cw-grid[class*="half"],
+    div.CwPropertiesLayoutHelpText[id*="half"],
+    div.cwLayoutGraph2D[id*="half"],
+    ul.cw-accordion-header[class*="half"],
+    div.cwPropertiesTableContainer,
+    .cw-dashboard-container,
+    .cw-list-wrapper,
+    div.property-box {
+      flex: 0 1 auto;
+    }
+    &.content-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
 
   //multipopout
   .cwDiagramExplosionMultipleChoice li:hover {
     background-color: rgba(22, 22, 22, 0.1);
     color: white;
+  }
+
+  // workflow
+
+  .cwWorkflow {
+    background-color: white;
+    padding: 0.75rem;
+    padding-top: 2rem;
+  }
+  // calculateur
+
+  .cwLayoutConfigEditor {
+    background-color: white;
+    padding: 0.75rem;
   }
   // radar
   .cwRadarWrapper {
@@ -610,22 +647,48 @@
     }
   }
   //simple table
-  table.cw-grid {
-    padding-bottom: 0px;
-    tr th {
+  .tableForPopoutWrapper {
+    table.cw-grid {
+      max-width: initial;
+      padding-bottom: 0px;
+      border: none;
+
+      tr:hover {
+        background-color: @cwBodyBackgroundColor !important;
+      }
+      tr {
+        td {
+          border-bottom: 1px solid @cwColor1;
+          border-left: none;
+        }
+        th {
+          border: none;
+          color: @cwColor1;
+          background: white;
+          border-bottom: 1px solid @cwColor1;
+        }
+        th:last-child,
+        td:last-child {
+          border-right: solid 0px;
+        }
+      }
+      tbody {
+        tr:last-child td {
+          border-bottom: 0px;
+        }
+      }
+    }
+    div.simpletable-title {
+      margin: 0;
+      border: none;
+      background-color: @cwColor1;
       color: white;
+      padding-left: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      font-size: 1.12rem;
+      border-bottom: 1px solid @cwColor1;
     }
-    tr:hover {
-      background-color: @cwBodyBackgroundColor !important;
-    }
-    td {
-      border-left: none;
-    }
-  }
-  div.simpletable-title {
-    width: 100%;
-    margin: 0.75rem;
-    background-color: white;
   }
   //accordeon
   div.cw-accordion-content {

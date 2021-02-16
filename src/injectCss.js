@@ -18,6 +18,8 @@ rule += " .property-box-asso ul.cw-accordion-header {width: calc(100% - 1.25rem)
 rule += "  div.cw-accordion-content div.cw-accordion-header {width: calc(100% - 16px);}";
 rule += " .cwLayoutTimelineExpertModeConfig div.cwPropertiesTableContainer {width: calc(100% - 2.5rem);}";
 
+rule += " .homePage_display_content .tableForPopoutWrapper {width: calc(100% - 10px)}";
+
 rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15%);}";
 rule += " .cw-jvectormap-from-list > .cwLayoutList { height: calc(100%);}";
 rule += " .cw-jvectormap-from-list .cwLayoutList .cwLayoutList{  width: calc(100% - 0.75rem);}";
