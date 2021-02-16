@@ -34,6 +34,7 @@ window.onload = function () {
     clearInterval(a);
     if (window.getComputedStyle(document.body).backgroundColor != "rgb(255, 255, 255)") {
       console.log("Enable Next Gen Style");
+      cwAPI.cwLayouts.cwLayoutGrid = cwAPI.cwLayouts.cwLayoutGridForPopout;
       addCss(rule);
     }
   }, 1000);
