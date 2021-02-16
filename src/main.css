@@ -630,13 +630,31 @@ body:not(.cw_print) .page-content-wrap .page-content {
 div.filteredListBox ul.property-details .property-value {
   padding: 0.75rem;
 }
-.property-box-asso div.cw-property-details-left,
-div.filteredListBox div.cw-property-details-left {
-  padding-left: 1.5rem;
-}
 .property-box-asso ul.property-details .property-value,
 div.filteredListBox ul.property-details .property-value {
   border: none;
+}
+ul.property-details li.property-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+}
+ul.property-details li.property-details div.cw-property-details-left {
+  width: 100%;
+  flex: 1 1 auto;
+}
+ul.property-details li.property-details div.cw-property-details-right {
+  flex: 1 1 auto;
+  width: initial;
+  display: flex;
+  justify-content: flex-start;
+}
+ul.property-details li.property-details div.cw-property-details-right .cw-edit-mode-association-search-result {
+  margin-top: 32px;
+}
+ul.property-details li.property-details div.cw-property-details-association {
+  flex: 1 1 auto;
+  width: initial;
 }
 div.property-box.property-box-asso {
   min-width: 20rem;
