@@ -533,7 +533,7 @@ div.cwLayoutTimelineButtons a.btn.page-action {
   background-color: white;
 }
 .cw-jvectormap-from-list > .cwLayoutList {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .tableForPopoutWrapper table.cw-grid {
   max-width: initial;
@@ -611,7 +611,7 @@ div.cw-accordion-content li.cw-accordion-container {
 body:not(.cw_print) .page-content-wrap .page-content {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 .view-region > div .property-box-asso,
 .view-region > div .property-box,
