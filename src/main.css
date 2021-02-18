@@ -420,6 +420,9 @@ div.property-box {
   flex-direction: column;
   width: 100%;
 }
+.reverse-node {
+  width: 100%;
+}
 .cwDiagramExplosionMultipleChoice li:hover {
   background-color: rgba(22, 22, 22, 0.1);
   color: white;
