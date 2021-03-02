@@ -400,7 +400,7 @@ div.cwPropertiesTableContainer,
 .cw-dashboard-container,
 .cw-list-wrapper,
 div.property-box {
-  width: 30rem;
+  width: 25rem;
   flex: 1 0 auto;
   margin: 0.75rem;
 }
@@ -660,7 +660,7 @@ ul.property-details li.property-details div.cw-property-details-association {
   width: initial;
 }
 div.property-box.property-box-asso {
-  min-width: 20rem;
+  min-width: 15rem;
   margin: 0.75rem;
   max-width: 2010px;
 }
@@ -732,7 +732,7 @@ div.cwPropertiesTableContainer {
   margin: 0.75rem;
   padding: 1.25rem;
   max-width: 100%;
-  min-width: 20rem;
+  min-width: 15rem;
 }
 div.cwPropertiesTableContainer table.cwPropertiesTable {
   border-collapse: unset;
