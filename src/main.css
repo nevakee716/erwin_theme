@@ -300,9 +300,25 @@ div.cwPropertiesTableHeader {
 .tabContent {
   background-color: white;
 }
+.CoffeeMaker div.row div.row-cell-value.row-cell-max-width div.cell-content-wrapper,
+.CoffeeMaker div.rowFlex div.row-cell-value.row-cell-max-width div.cell-content-wrapper {
+  background-color: white;
+}
 .CoffeeMaker div.propertieslist,
-.bootstrap-iso {
+.CoffeeMaker .bootstrap-iso {
   background-color: transparent;
+}
+.CoffeeMaker .checkEditModel {
+  display: flex;
+  flex-wrap: wrap;
+}
+.CoffeeMaker .checkEditModel > div {
+  width: 100%;
+}
+.CoffeeMaker .checkEditModel > div.cwPropertiesTableContainer {
+  width: 50rem;
+  flex: 1 0 auto;
+  background-color: white;
 }
 .homePage_last_modified_object table.cwPropertiesTable td td,
 table.cwPropertiesTable td,

@@ -372,11 +372,29 @@
     background-color: white;
   }
 
-  .CoffeeMaker div.propertieslist,
-  .bootstrap-iso {
-    background-color: transparent;
-  }
+  .CoffeeMaker {
+    div.row div.row-cell-value.row-cell-max-width div.cell-content-wrapper,
+    div.rowFlex div.row-cell-value.row-cell-max-width div.cell-content-wrapper {
+      background-color: white;
+    }
+    div.propertieslist,
+    .bootstrap-iso {
+      background-color: transparent;
+    }
+    .checkEditModel {
+      display: flex;
+      flex-wrap: wrap;
 
+      & > div {
+        width: 100%;
+      }
+      & > div.cwPropertiesTableContainer {
+        width: 50rem;
+        flex: 1 0 auto;
+        background-color: white;
+      }
+    }
+  }
   .homePage_last_modified_object table.cwPropertiesTable td,
   table.cwPropertiesTable {
     td,
