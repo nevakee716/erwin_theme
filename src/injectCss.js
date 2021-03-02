@@ -20,8 +20,10 @@ rule += " .cwLayoutTimelineExpertModeConfig div.cwPropertiesTableContainer {widt
 
 rule += " .homePage_display_content .tableForPopoutWrapper {width: calc(100% - 10px)}";
 
-rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15%);}";
+rule += " .cw-jvectormap-from-list .cwLayoutList {width: calc(15rem - 20px);}";
+rule += " .cw-jvectormap-from-list > div {  width: calc(100% - 15rem - 20px);}";
 rule += " .cw-jvectormap-from-list > .cwLayoutList { height: calc(100%);}";
+
 rule += " .cw-jvectormap-from-list .cwLayoutList .cwLayoutList{  width: calc(100% - 0.75rem);}";
 rule += " div.empty.k-grid div.property-box.property-box-asso { width: calc(100% - 1rem); }";
 rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
