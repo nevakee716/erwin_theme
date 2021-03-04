@@ -320,6 +320,12 @@ div.cwPropertiesTableHeader {
   flex: 1 0 auto;
   background-color: white;
 }
+.CoffeeMaker .CoffeeMakerView .extendableTitle {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
 .homePage_last_modified_object table.cwPropertiesTable td td,
 table.cwPropertiesTable td,
 .homePage_last_modified_object table.cwPropertiesTable td th,
