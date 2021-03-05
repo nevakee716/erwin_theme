@@ -21,5 +21,5 @@ This theme is using the card system, meaning that a layout (accordeon, listbox, 
 |  Jvector | 2  | x  | full|  
 |  Casewise chart | 2  |   | half|
 |  Network| 2  | x  | full only|  
-|  Pivot| 2  |   | full only|  
-|  Custom Query| 1  | x  | full only but display as half|  
+|  Pivot| 2  |  x (with saved cwpivot only) | full only|  
+|  Custom Query| 2  | x  | full only|  
