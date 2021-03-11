@@ -240,6 +240,9 @@ th.cw-header div {
 .cwDiagramExplosionMultipleChoice li:hover a {
   color: rgba(55, 131, 154, 0.1);
 }
+.page-options ul li.cwTabLink.selected a {
+  border-right: solid 3px #03a0ce;
+}
 body .main-nav a.cw-menu-link.activeLink,
 body .main-nav a.cw-menu-link:hover,
 body .main-nav a.cw-menu-link:focus {
