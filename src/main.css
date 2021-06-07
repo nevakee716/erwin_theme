@@ -413,7 +413,6 @@ div.property-box[class*="full"],
   flex: 0 1 auto;
   margin: 0.75rem;
 }
-.cwRadarWrapper,
 .tableForPopoutWrapper[class*="half"],
 div.CwPropertiesLayoutHelpText[id*="half"],
 div.cwLayoutGraph2D[id*="half"],
@@ -422,11 +421,16 @@ div.cwPropertiesTableContainer,
 .cw-dashboard-container,
 .cw-list-wrapper,
 div.property-box {
+  width: 20rem;
+  flex: 1 0 auto;
+  margin: 0.75rem;
+}
+.cwRadarWrapper,
+.cw-cost-benefit-chart {
   width: 25rem;
   flex: 1 0 auto;
   margin: 0.75rem;
 }
-.cw-diagram-popout-container #popout-content-container .cwRadarWrapper,
 .cw-diagram-popout-container #popout-content-container table.cw-grid[class*="half"],
 .cw-diagram-popout-container #popout-content-container div.CwPropertiesLayoutHelpText[id*="half"],
 .cw-diagram-popout-container #popout-content-container div.cwLayoutGraph2D[id*="half"],
@@ -435,7 +439,8 @@ div.property-box {
 .cw-diagram-popout-container #popout-content-container .cw-dashboard-container,
 .cw-diagram-popout-container #popout-content-container .cw-list-wrapper,
 .cw-diagram-popout-container #popout-content-container div.property-box {
-  flex: 0 1 auto;
+  flex: 1 1 auto;
+  width: 20rem;
 }
 .cw-diagram-popout-container #popout-content-container.content-container {
   display: flex;

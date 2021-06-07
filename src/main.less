@@ -2,7 +2,7 @@
 @import "../../_mixins";
 
 @shadow: 0 8px 32px rgba(47, 60, 74, 1%), 0 8px 16px rgba(47, 60, 74, 2%);
-@widthPropertyBoxAssociation: 19rem;
+@widthPropertyBoxAssociation: 20rem;
 & when (@cwTopBarBackgroundColor = @cwColor1) {
   /* Masquer le bouton Print */
   a#cw_print_btn {
@@ -522,11 +522,13 @@
     margin: 0.75rem;
   }
 
-  .cwRadarWrapper {
+  .cwRadarWrapper,
+  .cw-cost-benefit-chart {
     width: 25rem;
     flex: 1 0 auto;
     margin: 0.75rem;
   }
+
   //flex behaviour half in popout
   .cw-diagram-popout-container #popout-content-container {
     table.cw-grid[class*="half"],
@@ -538,7 +540,7 @@
     .cw-list-wrapper,
     div.property-box {
       flex: 1 1 auto;
-      width: 25rem;
+      width: @widthPropertyBoxAssociation;
     }
     &.content-container {
       display: flex;
