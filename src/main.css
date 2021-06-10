@@ -284,6 +284,9 @@ li.popout-title a {
 .homePage_display_content ul.cw-list {
   margin: 0px;
 }
+.homePage_display_content.noPadding {
+  padding: 0px;
+}
 .homePage_main .homePage_column .homePage_display .homePage_evolveView > ul.cw-list {
   padding: 0px;
 }
