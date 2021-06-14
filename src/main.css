@@ -290,7 +290,7 @@ li.popout-title a {
 .homePage_main .homePage_column .homePage_display .homePage_evolveView > ul.cw-list {
   padding: 0px;
 }
-.homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox img {
+.homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox img.roundShape {
   border-radius: 50%;
 }
 .homePage_main .homePage_column .homePage_display .homePage_links_in_bloc .linkBox .link {
