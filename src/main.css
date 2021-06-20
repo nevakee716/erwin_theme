@@ -695,6 +695,13 @@ ul.property-details li.property-details div.cw-property-details-association {
   flex: 1 1 auto;
   width: initial;
 }
+.collapsible-list-box .empty.cw-list {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.collapsible-list-box ul.property-details li.property-details {
+  display: block;
+}
 div.property-box.property-box-asso {
   min-width: 15rem;
   margin: 0.75rem;
@@ -706,6 +713,11 @@ div.CwPropertiesLayoutHelpText {
 }
 div.CwPropertiesLayoutHelpText[id*="noicon"] .fa {
   display: none;
+}
+.empty.cw-list:empty {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  padding: 0;
 }
 .empty.cw-list {
   margin-left: 0.75rem;
