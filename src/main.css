@@ -403,8 +403,6 @@ div.cwLayoutCustomQuery,
 .cwPivotWrapper,
 .tableForPopoutWrapper,
 div.cwLayoutGraph2D,
-div.layoutSearch,
-div.layoutSearchDocumentCustom,
 ul.cw-accordion-header,
 div.property-box[class*="full"],
 .property-box-asso ul.cw-accordion-header,
@@ -415,6 +413,12 @@ div.property-box[class*="full"],
   width: 100%;
   flex: 0 1 auto;
   margin: 0.75rem;
+}
+div.layoutSearch,
+div.layoutSearchDocumentCustom {
+  width: 100%;
+  flex: 0 1 auto;
+  margin: 0rem;
 }
 .tableForPopoutWrapper[class*="half"],
 div.CwPropertiesLayoutHelpText[id*="half"],
