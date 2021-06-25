@@ -458,7 +458,7 @@ div.property-box {
   width: 100%;
 }
 .cwDiagramExplosionMultipleChoice li:hover {
-  background-color: rgba(22, 22, 22, 0.1);
+  background-color: #03a0ce;
   color: white;
 }
 .cwWorkflow {
