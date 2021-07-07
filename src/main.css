@@ -863,7 +863,7 @@ div.empty.k-grid .k-primary {
   color: #2e2e2e;
 }
 div.empty.k-grid .k-grid-filter {
-  outline: -webkit-focus-ring-color auto 0px;
+  outline: 0px;
 }
 div.empty.k-grid .k-pager-wrap {
   background-color: white;
