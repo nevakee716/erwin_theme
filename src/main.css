@@ -238,6 +238,7 @@ th.cw-header div {
   color: rgba(55, 131, 154, 0.1);
 }
 .cwDiagramExplosionMultipleChoice li:hover a {
+  background-color: #03a0ce;
   color: rgba(55, 131, 154, 0.1);
 }
 body .main-nav a.cw-menu-link.activeLink,
@@ -256,6 +257,14 @@ body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link:focus {
 body li.cwTabLink.selected {
   border-right: solid 3px;
   border-right-color: #03a0ce;
+}
+.cwDiagramExplosionMultipleChoice li:hover {
+  background-color: #03a0ce;
+  color: #ffffff;
+}
+.cwDiagramExplosionMultipleChoice li:hover a {
+  background-color: #03a0ce;
+  color: #ffffff;
 }
 /* Top Breadcrumb*/
 #cw-smart-bc {

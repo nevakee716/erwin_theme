@@ -289,6 +289,7 @@
     background-color: @cwColor1;
     color: @cwBodyBackgroundColor;
     a {
+      background-color: @cwColor1;
       color: @cwBodyBackgroundColor;
     }
   }
@@ -325,6 +326,16 @@
 }
 
 & when (@cwBodyBackgroundColor = fade(desaturate(@cwColor1,50%),10%)) {
+  // multiple choice for explosions
+  .cwDiagramExplosionMultipleChoice li:hover {
+    background-color: @cwColor1;
+    color: @cwMenuLeftMainNavigationBackgroundColor;
+    a {
+      background-color: @cwColor1;
+      color: @cwMenuLeftMainNavigationBackgroundColor;
+    }
+  }
+
   /* Top Breadcrumb*/
 
   #cw-smart-bc {
