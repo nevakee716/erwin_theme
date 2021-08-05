@@ -354,9 +354,16 @@ table.cwPropertiesTable th {
   }
   body .main-nav {
     position: fixed;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     height: 100%;
+  }
+  body .main-nav::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 10px;
+  }
+  body .main-nav::-webkit-scrollbar-thumb {
+    background: #03a0ce;
   }
   body .main-nav .sub-level {
     position: fixed;
