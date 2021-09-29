@@ -537,12 +537,22 @@
     margin: 0.75rem;
   }
 
+  //flex behaviour 50% see injectCss
+  div.property-box[class*="pct50"]
+  {
+    //width: calc(50% - 1.5rem); check in injectcss
+    flex: 0 1 auto;
+    margin: 0.75rem;
+  }
+
+
   div.layoutSearch,
   div.layoutSearchDocumentCustom {
     width: 100%;
     flex: 0 1 auto;
     margin: 0rem;
   }
+
   //flex behaviour half
   .tableForPopoutWrapper[class*="half"],
   div.CwPropertiesLayoutHelpText[id*="half"],

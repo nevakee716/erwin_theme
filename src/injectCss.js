@@ -31,6 +31,8 @@ rule += " div.empty.k-grid div.property-box.property-box-asso {width: calc(100% 
 rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
 rule += " div.wrap-kendo-mobile { width: calc(100% - 1.5rem); }";
 rule += "  div.cwPropertiesTableContainer[id*='full'] { width: calc(100% - 1.5rem); }";
+rule += "div.property-box[class*='pct50']{width: calc(50% - 1.5rem);}";  
+
 
 // Load the rules and execute after the DOM loads
 window.onload = function () {
