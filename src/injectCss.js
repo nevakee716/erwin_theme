@@ -30,9 +30,24 @@ rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
 rule += " div.empty.k-grid div.property-box.property-box-asso {width: calc(100% - 1rem);}";
 rule += " div.empty.k-grid div.cw-list-wrapper { width: calc(100% - 1rem); }";
 rule += " div.wrap-kendo-mobile { width: calc(100% - 1.5rem); }";
-rule += "  div.cwPropertiesTableContainer[id*='full'] { width: calc(100% - 1.5rem); }";
-rule += "div.property-box[class*='pct50']{width: calc(50% - 1.5rem);}";  
+rule += " div.cwPropertiesTableContainer[id*='full'] { width: calc(100% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct50'] { width: calc(50% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct75'] { width: calc(75% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct80'] { width: calc(80% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct90'] { width: calc(90% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct60'] { width: calc(60% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct40'] { width: calc(40% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct30'] { width: calc(30% - 1.5rem); }";
+rule += " div.cwPropertiesTableContainer[id*='pct25'] { width: calc(20% - 1.5rem); }";
 
+rule += " div.property-box[class*='pct50']{width: calc(50% - 1.5rem);}";
+rule += " div.property-box[class*='pct75']{width: calc(75% - 1.5rem);}";
+rule += " div.property-box[class*='pct80']{width: calc(80% - 1.5rem);}";
+rule += " div.property-box[class*='pct90']{width: calc(90% - 1.5rem);}";
+rule += " div.property-box[class*='pct60']{width: calc(60% - 1.5rem);}";
+rule += " div.property-box[class*='pct40']{width: calc(40% - 1.5rem);}";
+rule += " div.property-box[class*='pct30']{width: calc(30% - 1.5rem);}";
+rule += " div.property-box[class*='pct25']{width: calc(20% - 1.5rem);}";
 
 // Load the rules and execute after the DOM loads
 window.onload = function () {

@@ -326,6 +326,145 @@
 }
 
 & when (@cwBodyBackgroundColor = fade(desaturate(@cwColor1,50%),10%)) {
+  body:not(.cw_print) .page-content-wrap .page-top {
+    top: 35px;
+    width: calc(100% - 500px+ 16px);
+  }
+  body:not(.cw_print) .page-content-wrap .page-content {
+    padding: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    #nav-container {
+      margin-top: 41px;
+    }
+
+    // menu
+    body .wrap {
+      padding-left: 220px;
+    }
+    body .content.menu-open {
+      padding-left: 0px;
+    }
+
+    .has-page-menu {
+      .page-content-wrap {
+        padding: 0px !important;
+      }
+
+      .cw-star-wrapper {
+        display: none;
+      }
+      div.page-title {
+        position: absolute;
+        height: 41px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 300px;
+        right: 78px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .page-menu {
+        width: 100%;
+        margin: 0;
+        float: unset;
+        min-height: unset;
+        position: unset;
+        .navViewContainer {
+          display: flex;
+        }
+
+        .page-options {
+          a {
+            white-space: nowrap;
+          }
+          ul.navViews {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            & > li {
+              & > ul.collapsed {
+                display: none;
+              }
+              & > ul {
+                display: flex;
+                overflow-x: auto;
+              }
+              &.selected {
+                display: block;
+              }
+            }
+          }
+        }
+        li.cwTabLink.selected {
+          border-right: solid 0px;
+          border-bottom: solid 3px;
+          border-bottom-color: #03a0ce;
+        }
+      }
+    }
+    body .main-nav {
+      position: fixed;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 100%;
+      width: 220px;
+      .main-level {
+        width: 220px;
+      }
+      li.btn-back {
+        display: none !important;
+      }
+      .active {
+        & > a.hassub .cw-menu-arrow-zone .cw-menu-arrow {
+          transform: translate(-8px, 0) rotate(-90deg) scale(1.5);
+        }
+
+        & > ul.sub-level {
+          display: block;
+          width: 220px;
+          top: unset;
+          left: unset;
+          height: unset;
+          position: unset;
+          margin-top: 0px;
+
+          & > .cw-menu-zone > .cw-menu-link {
+            padding-left: 1rem;
+            border: none;
+          }
+        }
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        &:hover::-webkit-scrollbar {
+          width: 2px;
+          height: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: @cwColor1;
+        }
+
+        .sub-level {
+          position: fixed;
+          margin-top: 41px;
+        }
+      }
+    }
+  }
+
+  .content.menu-open {
+    padding-left: 42px;
+  }
+
   // multiple choice for explosions
   .cwDiagramExplosionMultipleChoice li:hover {
     background-color: @cwColor1;
@@ -337,7 +476,6 @@
   }
 
   /* Top Breadcrumb*/
-
   #cw-smart-bc {
     color: white;
     a,
@@ -437,32 +575,6 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    #nav-container {
-      margin-top: 41px;
-    }
-
-    body .main-nav {
-      position: fixed;
-      overflow-y: auto;
-      overflow-x: hidden;
-      height: 100%;
-
-      &::-webkit-scrollbar {
-        width: 0.3rem;
-        height: 10px;
-      }
-      &::-webkit-scrollbar-thumb {
-        background: @cwColor1;
-      }
-
-      .sub-level {
-        position: fixed;
-        margin-top: 41px;
-      }
-    }
-  }
-
   body #cw-top-bar {
     .tb-profile-container .tb-username,
     .tb-profile-container i {
@@ -537,14 +649,11 @@
     margin: 0.75rem;
   }
 
-  //flex behaviour 50% see injectCss
-  div.property-box[class*="pct50"]
-  {
-    //width: calc(50% - 1.5rem); check in injectcss
+  //flex behaviour % see injectCss
+  div.property-box[class*="pct"] {
     flex: 0 1 auto;
     margin: 0.75rem;
   }
-
 
   div.layoutSearch,
   div.layoutSearchDocumentCustom {
