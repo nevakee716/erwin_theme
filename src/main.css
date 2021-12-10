@@ -258,123 +258,6 @@ body li.cwTabLink.selected {
   border-right: solid 3px;
   border-right-color: #03a0ce;
 }
-body:not(.cw_print) .page-content-wrap .page-top {
-  top: 35px;
-  width: calc(100% - 500px+16px);
-}
-body:not(.cw_print) .page-content-wrap .page-content {
-  padding: 20px;
-}
-@media screen and (min-width: 1024px) {
-  #nav-container {
-    margin-top: 41px;
-  }
-  body .wrap {
-    padding-left: 220px;
-  }
-  body .content.menu-open {
-    padding-left: 0px;
-  }
-  .has-page-menu .page-content-wrap {
-    padding: 0px !important;
-  }
-  .has-page-menu .cw-star-wrapper {
-    display: none;
-  }
-  .has-page-menu div.page-title {
-    position: absolute;
-    height: 41px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 300px;
-    right: 78px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 900;
-  }
-  .has-page-menu .page-menu {
-    width: 100%;
-    margin: 0;
-    float: unset;
-    min-height: unset;
-    position: unset;
-  }
-  .has-page-menu .page-menu .navViewContainer {
-    display: flex;
-  }
-  .has-page-menu .page-menu .page-options a {
-    white-space: nowrap;
-  }
-  .has-page-menu .page-menu .page-options ul.navViews {
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-  }
-  .has-page-menu .page-menu .page-options ul.navViews > li > ul.collapsed {
-    display: none;
-  }
-  .has-page-menu .page-menu .page-options ul.navViews > li > ul {
-    display: flex;
-    overflow-x: auto;
-  }
-  .has-page-menu .page-menu .page-options ul.navViews > li.selected {
-    display: block;
-  }
-  .has-page-menu .page-menu li.cwTabLink.selected {
-    border-right: solid 0px;
-    border-bottom: solid 3px;
-    border-bottom-color: #03a0ce;
-  }
-  body .main-nav {
-    position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: 100%;
-    width: 220px;
-  }
-  body .main-nav .main-level {
-    width: 220px;
-  }
-  body .main-nav li.btn-back {
-    display: none !important;
-  }
-  body .main-nav .active > a.hassub .cw-menu-arrow-zone .cw-menu-arrow {
-    transform: translate(-8px, 0) rotate(-90deg) scale(1.5);
-  }
-  body .main-nav .active > ul.sub-level {
-    display: block;
-    width: 220px;
-    top: unset;
-    left: unset;
-    height: unset;
-    position: unset;
-    margin-top: 0px;
-  }
-  body .main-nav .active > ul.sub-level > .cw-menu-zone > .cw-menu-link {
-    padding-left: 1rem;
-    border: none;
-  }
-  body .main-nav .active::-webkit-scrollbar {
-    display: none;
-  }
-  body .main-nav .active:hover::-webkit-scrollbar {
-    width: 2px;
-    height: 10px;
-  }
-  body .main-nav .active::-webkit-scrollbar-thumb {
-    background: #03a0ce;
-  }
-  body .main-nav .active .sub-level {
-    position: fixed;
-    margin-top: 41px;
-  }
-}
-.content.menu-open {
-  padding-left: 42px;
-}
 .cwDiagramExplosionMultipleChoice li:hover {
   background-color: #03a0ce;
   color: #ffffff;
@@ -464,6 +347,28 @@ table.cwPropertiesTable td,
 table.cwPropertiesTable th {
   border: 0px solid rgba(55, 131, 154, 0.1);
   border-bottom: 1px solid rgba(55, 131, 154, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  #nav-container {
+    margin-top: 41px;
+  }
+  body .main-nav {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  body .main-nav::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 10px;
+  }
+  body .main-nav::-webkit-scrollbar-thumb {
+    background: #03a0ce;
+  }
+  body .main-nav .sub-level {
+    position: fixed;
+    margin-top: 41px;
+  }
 }
 body #cw-top-bar .tb-profile-container .tb-username,
 body #cw-top-bar .tb-profile-container i {
