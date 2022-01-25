@@ -130,6 +130,11 @@ table.cw-matrix-advanced tr:hover th.cw-header a div:after {
     background: rgba(147, 176, 193, 0.15);
   }
 }
+.page-menu .page-options a {
+  line-height: 15px;
+  padding-bottom: 13px;
+  padding-top: 12px;
+}
 ul.navViews li.selected {
   border-left: solid 1px #f1f1f1;
   border-right: solid 1px #f1f1f1;
