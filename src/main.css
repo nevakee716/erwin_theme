@@ -135,6 +135,9 @@ table.cw-matrix-advanced tr:hover th.cw-header a div:after {
   padding-bottom: 13px;
   padding-top: 12px;
 }
+.page-menu .page-options a.hassub {
+  padding: 12px 30px 13px 10px;
+}
 ul.navViews li.selected {
   border-left: solid 1px #f1f1f1;
   border-right: solid 1px #f1f1f1;
