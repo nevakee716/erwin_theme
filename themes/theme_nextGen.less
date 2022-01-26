@@ -56,7 +56,7 @@
 
 /* DIAGRAM */
 @cwDiagramBreadCrumbBackgroundColor: @mainColor;
-@cwDiagramBreadCrumbBoxBackgroundColor: lighten(@mainColor, 50%);
+@cwDiagramBreadCrumbBoxBackgroundColor: hsl(hue(@mainColor), saturation(@mainColor), 70%);
 @cwDiagramBreadCrumbBoxTextColor: @cwTextColor;
 @cwDiagramEditorIconColor: #b7b7b7; //v3.1
 @cwDiagramEditorMenuBackgroundColor: #f1f1f1; //v3.1
@@ -189,9 +189,10 @@
 @cwWorkflowTaskApprovalApproved: #47ae47; //v3.0
 @cwWorkflowTaskApprovalRejected: @cwErrorColor; //v3.0
 @cwWorkflowDelegatedTaskColor: @warningColor; //v3.0
-@cwWorflowTaskBackgroundColor: lighten(@mainColor, 35%);
+@cwWorflowTaskBackgroundColor: hsl(hue(@mainColor), saturation(@mainColor), 70%);
+
 @cwWorflowTaskTextColor: @cwTextColor;
-@cwWorflowNotificationBackgroundColor: lighten(@mainColor, 30%);
+@cwWorflowNotificationBackgroundColor: hsl(hue(@mainColor), saturation(@mainColor), 70%);
 @cwWorflowNotificationTextColor: @cwTextColor;
 @cwWorflowDueDateCalendarBackgroundColor: @white;
 @cwWorflowDueDateCalendarOverdueMonthTextColor: #f5f5f5;
