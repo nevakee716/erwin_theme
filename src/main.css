@@ -700,6 +700,9 @@ body:not(.cw_print) .page-content-wrap .page-content {
   padding-left: 0.25rem;
   width: 100%;
 }
+.filteredListBox {
+  width: 100%;
+}
 .property-box-asso ul.property-details .property-value,
 div.filteredListBox ul.property-details .property-value {
   padding: 0.75rem;
