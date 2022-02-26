@@ -32,17 +32,16 @@
       output.push("<div class='cw-list-wrapper'>");
       output.push('<h5 class="cw-list-title">', this.mmNode.NodeName, "</h5>");
     }
-    let directive;
-    if (isUsingDirective()) {
-      directive = this.options.DisplayPropertyScriptName.split("ngDirective:")[0];
-    }
+    let directive =
+      this.options.DisplayPropertyScriptName.indexOf("ngDirective:") !== -1
+        ? " " + this.options.DisplayPropertyScriptName.split("ngDirective:")[1]
+        : "";
 
     output.push(
       "<ul id='cw-layout-",
       this.layoutId,
       "' class='cw-list ",
       this.nodeID,
-      " ",
       directive,
       " ",
       this.nodeID,
