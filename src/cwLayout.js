@@ -3,6 +3,35 @@
 /*global cwAPI, jQuery*/
 (function (cwApi, $) {
   "use strict";
+
+  function loadDirective(layout, dId, viewSchema) {
+    cwApi.CwAsyncLoader.load("angular", function () {
+      var loader = cwApi.CwAngularLoader,
+        $container,
+        directive,
+        directiveNodeId = layout.nodeID + "-" + dId;
+      loader.setup();
+      directive = layout.options.DisplayPropertyScriptName.replace("ngDirective:", "");
+      $container = $("#cw-layout-" + layout.layoutId);
+      if ($container.length > 0) {
+        $container.append("<li ng-repeat='item in items' " + directive + ">&nbsp;</li>");
+        loader.loadController(directiveNodeId, $container, function ($scope) {
+          $scope.items = layout.associationTargetNode;
+          $scope.viewSchema = viewSchema;
+        });
+      }
+    });
+  }
+
+  cwApi.cwLayouts.CwLayout.prototype.handleDirectives = function () {
+    var that = this;
+    if (!this.directiveId) this.directiveId = 0;
+    if (this.isUsingDirective()) {
+      loadDirective(that, this.directiveId, this.viewSchema);
+      this.directiveId += 1;
+    }
+  };
+
   cwApi.cwLayouts.CwLayout.prototype.drawAssociations = function (output, associationTitleText, object) {
     /*jslint unparam:true*/
     var i, child, associationTargetNode, objectId;
