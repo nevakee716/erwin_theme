@@ -676,6 +676,11 @@ div.cw-accordion-content li.cw-accordion-container {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+div.cw-children {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .tab-content {
   display: flex;
   flex-wrap: wrap;
