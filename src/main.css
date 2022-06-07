@@ -600,6 +600,7 @@ div.cwLayoutTimelineButtons a.btn.page-action {
 }
 .cw-jvector-map {
   background-color: white;
+  flex-grow: 1;
 }
 .cw-jvectormap-from-list .cwLayoutList {
   min-width: 0px;
