@@ -92,6 +92,25 @@
     color: @cwBodyBackgroundColor;
   }
 
+  #cw-smart-bc {
+    text-overflow: ellipsis;
+    flex-wrap: unset;
+
+    li.cw-bc.cw-bc-show:last-of-type {
+      flex: 0 1 auto;
+      min-width: 0;
+      span {
+        text-overflow: ellipsis;
+      }
+      .cw-bc-dropdown {
+        width: 100%;
+        .cw-bc-dropdown-default {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   /* Diagram breadcrumb */
   div.cwDiagramBreadcrumb {
     a.btn {
