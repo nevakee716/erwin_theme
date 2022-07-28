@@ -3,7 +3,7 @@
 
 @shadow: 0 8px 32px rgba(47, 60, 74, 1%), 0 8px 16px rgba(47, 60, 74, 2%);
 @widthPropertyBoxAssociation: 20rem;
-& when (@cwTopBarBackgroundColor = @cwColor1) {
+& when (@cwTopBarBackgroundColor = @cwColor1),(@cwMenuLeftMainNavigationTextColorHover = @cwColor1) {
   /* Masquer le bouton Print */
   a#cw_print_btn {
     display: none;
