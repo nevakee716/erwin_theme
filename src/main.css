@@ -279,6 +279,9 @@ body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link:hover,
 body .main-nav .main-level .cw-menu-zone .sub-level a.cw-menu-link:focus {
   border-right-color: #03a0ce;
 }
+body .main-nav .main-level ul.cw-menu-text-zone li.cw-menu-text-zone.cw-menu-badge-zone {
+  height: 35px;
+}
 body li.cwTabLink.selected {
   border-right: solid 3px;
   border-right-color: #03a0ce;
