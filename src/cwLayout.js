@@ -58,7 +58,7 @@
       }
     }
     if (this.options && this.options.CustomOptions && this.options.CustomOptions["display-title"] === true && associationTargetNode.length > 0) {
-      output.push("<div class='cw-list-wrapper'>");
+      output.push(`<div class="cw-list-wrapper" id="${this.nodeID}">`);
       output.push('<h5 class="cw-list-title">', this.mmNode.NodeName, "</h5>");
     }
     let directive =

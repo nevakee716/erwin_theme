@@ -47,6 +47,15 @@ rule += " div.property-box[class*='pct40']{width: calc(40% - 1.5rem);}";
 rule += " div.property-box[class*='pct30']{width: calc(30% - 1.5rem);}";
 rule += " div.property-box[class*='pct25']{width: calc(25% - 1.5rem);}";
 
+rule += " div.cw-list-wrapper[id*='full'] { width: calc(100% - 1.5rem); }";
+rule += " div.cw-list-wrapper[class*='pct75']{width: calc(75% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct70']{width: calc(70% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct60']{width: calc(60% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct50']{width: calc(50% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct40']{width: calc(40% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct30']{width: calc(30% - 1.5rem);}";
+rule += " div.cw-list-wrapper[class*='pct25']{width: calc(25% - 1.5rem);}";
+
 // Load the rules and execute after the DOM loads
 window.onload = function () {
   var a = setInterval(function () {
