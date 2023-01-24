@@ -950,3 +950,14 @@ div.empty.k-grid .k-pager-wrap .k-link:hover {
 div.empty.k-grid .k-pager-wrap .k-link:hover .k-icon {
   color: #03a0ce;
 }
+.gs-favorite-window.open {
+  position: fixed;
+  left: 195px;
+  top: 148px;
+  background-color: hsl(193.59605911, 40%, 95%);
+  width: 560px;
+  border: 1px solid #03a0ce;
+  display: block !important;
+  border-radius: 5px;
+  overflow-y: auto;
+}
