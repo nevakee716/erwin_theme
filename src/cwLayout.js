@@ -58,9 +58,14 @@
       }
     }
     if (this.options && this.options.CustomOptions && this.options.CustomOptions["display-title"] === true && associationTargetNode.length > 0) {
+      let title = this.mmNode.NodeName;
+      if ($.i18n.hasOwnProperty(this.mmNode.NodeName)) title = $.i18n.prop(this.mmNode.NodeName);
+      if ($.i18n.hasOwnProperty(this.nodeID)) title = $.i18n.prop(this.nodeID);
+
       output.push(`<div class="cw-list-wrapper" id="${this.nodeID}">`);
-      output.push('<h5 class="cw-list-title">', this.mmNode.NodeName, "</h5>");
+      output.push('<h5 class="cw-list-title">', title, "</h5>");
     }
+
     let directive =
       this.options.DisplayPropertyScriptName.indexOf("ngDirective:") !== -1
         ? " " + this.options.DisplayPropertyScriptName.split("ngDirective:")[1]
