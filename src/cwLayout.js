@@ -59,9 +59,8 @@
     }
     if (this.options && this.options.CustomOptions && this.options.CustomOptions["display-title"] === true && associationTargetNode.length > 0) {
       let title = this.mmNode.NodeName;
-      if ($.i18n.hasOwnProperty(this.mmNode.NodeName)) title = $.i18n.prop(this.mmNode.NodeName);
-      if ($.i18n.hasOwnProperty(this.nodeID)) title = $.i18n.prop(this.nodeID);
-
+      if ($.i18n.prop(this.mmNode.NodeName)[0] !== "[") title = $.i18n.prop(this.mmNode.NodeName);
+      if ($.i18n.prop(this.nodeID)[0] !== "[") title = $.i18n.prop(this.nodeID);
       output.push(`<div class="cw-list-wrapper" id="${this.nodeID}">`);
       output.push('<h5 class="cw-list-title">', title, "</h5>");
     }
