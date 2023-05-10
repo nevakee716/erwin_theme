@@ -381,6 +381,7 @@ table.cwPropertiesTable th {
     overflow-y: auto;
     overflow-x: hidden;
     height: 100%;
+    top: 0;
   }
   body .main-nav::-webkit-scrollbar {
     width: 0.3rem;
@@ -392,6 +393,7 @@ table.cwPropertiesTable th {
   body .main-nav .sub-level {
     position: fixed;
     margin-top: 41px;
+    top: 0;
   }
 }
 body #cw-top-bar .tb-profile-container .tb-username,
