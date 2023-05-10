@@ -25,10 +25,6 @@
 /* DIAGRAM TILE */
 /* MATRIX ADVANCED */
 /* DIAGRAM OVERLAY */
-/* Masquer le bouton Print */
-a#cw_print_btn {
-  display: none;
-}
 /* Properties group header */
 div.cwPropertiesTableHeader {
   font-weight: bold;
